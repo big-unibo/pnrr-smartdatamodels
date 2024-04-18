@@ -66,18 +66,16 @@ FIWARE offers APIs to upload/get/update the data.
 Either we use FTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models
 
 
-What is the Smart Data Models Initiative?
+What is the **Smart Data Models Initiative**?
 
-- Joint collaboration to support the adoption of a reference architecture and compatible common data models that underpin interoperable and replicable solutions in multiple sectors
-- A smart data model includes four elements: 
+- Joint collaboration to *support the adoption of a reference architecture and compatible common data models* that underpin interoperable and replicable solutions in multiple sectors
+- A smart data model *includes four elements*: 
     - The schema
     - The specification of a written document for human readers
     - URI with a working URL with basic data about the attribute or the entity
     - Examples of the payloads for NGSIv2 and NGSI-LD versions.
-- All data models are public and of royalty-free nature. The licensing mode grants 3 rights to the users:
-    - Free use
-    - Free modification
-    - Free sharing of the modifications
+- All data models are public and of *royalty-free nature*. The licensing mode grants 3 rights to the users:
+    - Free use, free modification, free sharing of the modifications
 
 Some examples:
 
