@@ -408,26 +408,28 @@
 <h1>Integration with the data platform</h1>
 <p>Two levels of integration</p>
 <ol type="1">
-<li>Data
+<li><em>Data</em>
 <ol type="1">
 <li>Upload raw data</li>
 <li>Process your data on your machine and upload processed data</li>
 </ol></li>
-<li>Processes
+<li><em>Processes</em>
 <ol start="3" type="1">
 <li>Move the processing directly to the platform</li>
 </ol></li>
 </ol>
 <p>Collection APIs​</p>
 <ul>
-<li>Black box​: raw files</li>
-<li>White box​ (intelligible): JSON documents with known schemas</li>
+<li><em>Black box</em>​: raw files</li>
+<li><em>White box</em>​ (intelligible): JSON documents with known schemas</li>
 </ul>
 <p>Data processes​</p>
 <ul>
-<li>Platform: internal processes known to the platform, typically shared tasks and standard data processing (Spark, Kafka, and Docker containers)​</li>
-<li>User: black-box processes that implement partner-specific analytics (Docker containers)​</li>
+<li><strong>Platform</strong>: internal processes known to the platform, typically shared tasks and standard data processing (Spark, Kafka, and Docker containers)​</li>
+<li><strong>User</strong>: black-box processes that implement partner-specific analytics (Docker containers)​
+<ul>
 <li>Abbiamo acquistato 2 GPU NVIDIA RTX™ 6000 Ada Generation (48 GB GDDR6)</li>
+</ul></li>
 </ul>
 </section>
 
@@ -435,13 +437,13 @@
 <h1>Data collection</h1>
 <p>Data collection comes with 2 (main) interfaces: FTP and FIWARE</p>
 <ul>
-<li>FTP (File Transfer Protocol) is a network protocol for transmitting files between computers over Transmission Control Protocol/Internet Protocol (TCP/IP) connections</li>
-<li>FIWARE open source enabler for data collection</li>
+<li><em>FTP</em> (File Transfer Protocol) is a network protocol for transmitting files between computers over TCP/IP connections</li>
+<li><em>FIWARE</em> open source enabler for data collection</li>
 </ul>
-<p>Two main data types:</p>
+<p>Collection of two main data types:</p>
 <ul>
 <li>Black box (images, videos) as files through FTP</li>
-<li>Intelligible JSON documents as files through FTP or to FIWARE through HTTP requests</li>
+<li>White box (JSON documents) as files through FTP or to FIWARE through HTTP requests</li>
 </ul>
 <p>Integrating with FTP is “easy”: given user/password, upload files into the platform</p>
 </section>
@@ -468,8 +470,14 @@
 <p>Either we use FTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models</p>
 <p>What is the Smart Data Models Initiative?</p>
 <ul>
-<li>Joint collaboration initiative to support the adoption of a reference architecture and compatible common data models that underpin a digital market of interoperable and replicable smart solutions in multiple sectors, starting with Smart Cities.</li>
-<li>A smart data model includes four elements: the schema, or technical representation of the model defining the technical data types and structure, the specification of a written document for human readers, a URI with a working URL with basic data about the attribute or the entity, and the examples of the payloads for NGSIv2 and NGSI-LD versions.</li>
+<li>Joint collaboration to support the adoption of a reference architecture and compatible common data models that underpin interoperable and replicable solutions in multiple sectors</li>
+<li>A smart data model includes four elements:
+<ul>
+<li>The schema</li>
+<li>The specification of a written document for human readers</li>
+<li>URI with a working URL with basic data about the attribute or the entity</li>
+<li>Examples of the payloads for NGSIv2 and NGSI-LD versions.</li>
+</ul></li>
 <li>All data models are public and of royalty-free nature. The licensing mode grants 3 rights to the users:
 <ul>
 <li>Free use</li>
