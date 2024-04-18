@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="prova_files/libs/clipboard/clipboard.min.js"></script>
-<script src="prova_files/libs/quarto-html/tabby.min.js"></script>
-<script src="prova_files/libs/quarto-html/popper.min.js"></script>
-<script src="prova_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="prova_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="prova_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="prova_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="prova_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="guide_files/libs/clipboard/clipboard.min.js"></script>
+<script src="guide_files/libs/quarto-html/tabby.min.js"></script>
+<script src="guide_files/libs/quarto-html/popper.min.js"></script>
+<script src="guide_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="guide_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="guide_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="guide_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="guide_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
-  <meta name="author" content="John Doe">
-  <meta name="dcterms.date" content="2023-12-04">
-  <title>Title</title>
+  <meta name="dcterms.date" content="2024-04-18">
+  <title>Introduction on smart data models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="prova_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="prova_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,32 +94,12 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
-  <link rel="stylesheet" href="prova_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="prova_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="prova_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="prova_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="prova_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  </style>
+  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="guide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="guide_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="guide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="guide_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -413,93 +392,113 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Title</h1>
-  <p class="subtitle">Subtitle</p>
+  <h1 class="title">Introduction on smart data models</h1>
 
 <div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-John Doe 
-</div>
-</div>
 </div>
 
-  <p class="date">2023-12-04</p>
+  <p class="date">2024-04-18</p>
 </section>
-<section>
-<section id="main-slide" class="title-slide slide level1 center">
-<h1>Main slide</h1>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Left column <span class="citation" data-cites="DBLP:journals/eswa/FranciaGG24">(<a href="#/references" role="doc-biblioref" onclick="">Francia, Gallinucci, and Golfarelli 2024</a>)</span></p>
-</div><div class="column" style="width:60%;">
-<p>Right column</p>
-</div>
-</div>
-</section>
-<section id="this-is-some-latex" class="slide level2">
-<h2>This is some latex</h2>
+<section id="data-platform" class="title-slide slide level1 center scrollable">
+<h1>Data platform</h1>
+<p>Two levels of integration</p>
+<ol type="1">
+<li>Data</li>
+<li>Processes</li>
+</ol>
+<p>Collection APIs​</p>
 <ul>
-<li><span class="math inline">\(A \in \{0, 1\}\)</span></li>
-<li><span class="math display">\[A \in \{0, 1\}\]</span></li>
+<li>Black box​: raw files</li>
+<li>White box​ (intelligible): JSON documents with known schemas</li>
 </ul>
-</section></section>
-<section id="this-is-embedded" class="title-slide slide level1 center">
-<h1>This is embedded</h1>
-
+<p>Data processes​</p>
+<ul>
+<li>Platform: internal processes known to the platform, typically shared tasks and standard data processing (Spark, Kafka, and Docker containers)​</li>
+<li>User: black-box processes that implement partner-specific analytics (Docker containers)​</li>
+<li>Abbiamo acquistato 2 GPU NVIDIA RTX™ 6000 Ada Generation (48 GB GDDR6)</li>
+</ul>
 </section>
 
-<section>
-<section id="main-slide-1" class="title-slide slide level1 center">
-<h1>Main slide</h1>
-<p>Hi from embedded document</p>
-</section>
-<section id="a-section" class="slide level2">
-<h2>A Section</h2>
-<p>Bbb</p>
-
-<img data-src="https://github.com/w4bo/img-dump/assets/18005592/edb97112-e9bb-45f8-8f2c-3121ebd80b7d" class="r-stretch quarto-figure-center"><p class="caption">immagine</p></section>
-<section id="a-section-1" class="slide level2">
-<h2>A Section</h2>
-<p>Xxx</p>
-<h3 id="a-subsection">A subsection</h3>
-<p>Ccc</p>
-</section>
-<section class="slide level2">
-
-<h3 id="a-subsection-1">A subsection</h3>
-<p>Yyy</p>
-</section>
-<section class="slide level2">
-
-<h4 id="a-subsubsection">A subsubsection</h4>
-<p>Ddd</p>
-</section>
-<section id="a-subsubsubsection" class="slide level2">
-<h2>A subsubsubsection</h2>
-<p>Eee</p>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section id="some-other-slides" class="title-slide slide level1 center">
-<h1>Some other slides</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href=""></a><span class="kw">let</span> a <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb1-2"><a href=""></a><span class="kw">let</span> b <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></span>
-<span id="cb1-3"><a href=""></a><span class="kw">let</span> c <span class="op">=</span> x <span class="kw">=&gt;</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">+</span> x<span class="op">;</span></span>
-<span id="cb1-4"><a href=""></a><span class="fu">c</span>(<span class="dv">3</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="data-collection" class="title-slide slide level1 center">
+<h1>Data collection</h1>
+<p>Data collection comes with 2 (main) interfaces: FTP and FIWARE</p>
+<ul>
+<li>FTP (File Transfer Protocol) is a network protocol for transmitting files between computers over Transmission Control Protocol/Internet Protocol (TCP/IP) connections</li>
+<li>FIWARE open source enabler for data collection</li>
+</ul>
+<p>Two main data types:</p>
+<ul>
+<li>Black box (images, videos) as files through FTP</li>
+<li>Intelligible JSON documents as files through FTP or to FIWARE through HTTP requests</li>
+</ul>
+<p>Integrating with FTP is “easy”: given user/password, upload files into the platform</p>
 </section>
 
-<section id="references" class="title-slide slide level1 smaller scrollable">
-<h1>References</h1>
+<section id="fiware" class="title-slide slide level1 center">
+<h1>FIWARE</h1>
+<p>FIWARE offers APIs to upload/get/update the data.</p>
+<ul>
+<li><p>Examples of APIs are available <a href="https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03">here</a></p></li>
+<li><p>Example of request</p>
+<pre><code>  curl --location 'http://localhost:1026/v2/entities/' \​
+       --header 'Content-Type: application/json' \​
+       --data ' {​
+          "id":"CropDevice010",
+          "type":"Device",​
+          "observedProperty": ["speed"],​
+          "value": [5]​
+       }'</code></pre></li>
+</ul>
+</section>
+
+<section id="smart-data-models" class="title-slide slide level1 center">
+<h1>Smart data models</h1>
+<p>Either we use FTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models</p>
+<p>What is the Smart Data Models Initiative?</p>
+<ul>
+<li>Joint collaboration initiative to support the adoption of a reference architecture and compatible common data models that underpin a digital market of interoperable and replicable smart solutions in multiple sectors, starting with Smart Cities.</li>
+<li>A smart data model includes four elements: the schema, or technical representation of the model defining the technical data types and structure, the specification of a written document for human readers, a URI with a working URL with basic data about the attribute or the entity, and the examples of the payloads for NGSIv2 and NGSI-LD versions.</li>
+<li>All data models are public and of royalty-free nature. The licensing mode grants 3 rights to the users:
+<ul>
+<li>Free use</li>
+<li>Free modification</li>
+<li>Free sharing of the modifications</li>
+</ul></li>
+</ul>
+<p>Some examples:</p>
+<ul>
+<li><a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml">AgriParcel (Environment)​</a></li>
+<li><a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml">Device (Measurement + Agent)​</a></li>
+<li><a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceMeasurement/swagger.yaml">DeviceMeasurement (Measurement)​</a></li>
+</ul>
+</section>
+
+<section id="example-device" class="title-slide slide level1 center">
+<h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml">Device</a></h1>
+<p>An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href=""></a>{</span>
+<span id="cb2-2"><a href=""></a>  <span class="st">"id"</span><span class="op">:</span> <span class="st">"device-9845A"</span><span class="op">,</span></span>
+<span id="cb2-3"><a href=""></a>  <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
+<span id="cb2-4"><a href=""></a>  <span class="st">"deviceCategory"</span><span class="op">:</span> [<span class="st">"sensor"</span>]<span class="op">,</span></span>
+<span id="cb2-5"><a href=""></a>  <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"fillingLevel"</span><span class="op">,</span> <span class="st">"temperature"</span>]<span class="op">,</span></span>
+<span id="cb2-6"><a href=""></a>  <span class="st">"batteryLevel"</span><span class="op">:</span> <span class="fl">0.75</span><span class="op">,</span></span>
+<span id="cb2-7"><a href=""></a>  <span class="st">"serialNumber"</span><span class="op">:</span> <span class="st">"9845A"</span><span class="op">,</span></span>
+<span id="cb2-8"><a href=""></a>  <span class="st">"value"</span><span class="op">:</span> [D0<span class="op">.</span><span class="dv">22</span><span class="op">,</span> <span class="fl">21.2</span>]<span class="op">,</span></span>
+<span id="cb2-9"><a href=""></a>  <span class="st">"deviceState"</span><span class="op">:</span> <span class="st">"ok"</span><span class="op">,</span></span>
+<span id="cb2-10"><a href=""></a>  <span class="st">"dateFirstUsed"</span><span class="op">:</span> <span class="st">"2014-09-11T11:00:00Z"</span><span class="op">,</span></span>
+<span id="cb2-11"><a href=""></a>  <span class="st">"owner"</span><span class="op">:</span> [<span class="st">"http://person.org/leon"</span>]</span>
+<span id="cb2-12"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
+<section id="questions-on-data-collection" class="title-slide slide level1 center">
+<h1>Questions on data collection</h1>
+<ul>
+<li>What is the volume and amount of data?</li>
+<li>What are the main subjects of the analysis? In other words, what data are valuable for your analysis?</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>My footnote</p>
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-DBLP:journals/eswa/FranciaGG24" class="csl-entry" role="listitem">
-Francia, Matteo, Enrico Gallinucci, and Matteo Golfarelli. 2024. <span>“Colossal Trajectory Mining: <span>A</span> Unifying Approach to Mine Behavioral Mobility Patterns.”</span> <em>Expert Syst. Appl.</em> 238 (Part <span>E</span>): 122055. <a href="https://doi.org/10.1016/J.ESWA.2023.122055">https://doi.org/10.1016/J.ESWA.2023.122055</a>.
+<p>Spoke 3 - University of Bologna</p>
 </div>
 </div>
 </section>
@@ -507,19 +506,19 @@ Francia, Matteo, Enrico Gallinucci, and Matteo Golfarelli. 2024. <span>“Coloss
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="prova_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="guide_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="prova_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="prova_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="prova_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="guide_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
