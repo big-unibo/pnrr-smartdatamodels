@@ -1,5 +1,5 @@
 ---
-title: Introduction on smart data models
+title: Introduction to data platform integration and smart data models
 date: 2024-04-18
 format:
   revealjs: 
@@ -8,17 +8,17 @@ format:
 
 # Data platform
 
-![image](https://github.com/big-unibo/pnrr-smartdatamodels/assets/18005592/68bac582-6104-4cc7-b514-c1e837600a9d)
+![The data platform](https://github.com/big-unibo/pnrr-smartdatamodels/assets/18005592/68bac582-6104-4cc7-b514-c1e837600a9d)
 
 # Integration with the data platform
 
 Two levels of integration
 
 1. Data
-  1. Upload raw data
-  2. Process your data on your machine and upload processed data
+    1. Upload raw data
+    2. Process your data on your machine and upload processed data
 2. Processes
-  3. Move the processing directly to the platform
+    3. Move the processing directly to the platform
 
 Collection APIs​
 
