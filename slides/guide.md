@@ -14,34 +14,34 @@ format:
 
 Two levels of integration
 
-1. Data
+1. *Data*
     1. Upload raw data
     2. Process your data on your machine and upload processed data
-2. Processes
+2. *Processes*
     3. Move the processing directly to the platform
 
 Collection APIs​
 
-- Black box​: raw files
-- White box​ (intelligible): JSON documents with known schemas
+- *Black box*​: raw files
+- *White box*​ (intelligible): JSON documents with known schemas
 
 Data processes​
 
-- Platform: internal processes known to the platform, typically shared tasks and standard data processing (Spark, Kafka, and Docker containers)​
-- User: black-box processes that implement partner-specific analytics (Docker containers)​
-- Abbiamo acquistato 2 GPU NVIDIA RTX™ 6000 Ada Generation (48 GB GDDR6)
+- **Platform**: internal processes known to the platform, typically shared tasks and standard data processing (Spark, Kafka, and Docker containers)​
+- **User**: black-box processes that implement partner-specific analytics (Docker containers)​
+    - Abbiamo acquistato 2 GPU NVIDIA RTX™ 6000 Ada Generation (48 GB GDDR6)
 
 # Data collection
 
 Data collection comes with 2 (main) interfaces: FTP and FIWARE
 
-- FTP (File Transfer Protocol) is a network protocol for transmitting files between computers over Transmission Control Protocol/Internet Protocol (TCP/IP) connections
-- FIWARE open source enabler for data collection
+- *FTP* (File Transfer Protocol) is a network protocol for transmitting files between computers over TCP/IP connections
+- *FIWARE* open source enabler for data collection
 
-Two main data types:
+Collection of two main data types:
 
 - Black box (images, videos) as files through FTP 
-- Intelligible JSON documents as files through FTP or to FIWARE through HTTP requests
+- White box (JSON documents) as files through FTP or to FIWARE through HTTP requests
 
 Integrating with FTP is "easy": given user/password, upload files into the platform
 
@@ -68,8 +68,12 @@ Either we use FTP or FIWARE, for intelligible documents we need to define a shar
 
 What is the Smart Data Models Initiative?
 
-- Joint collaboration initiative to support the adoption of a reference architecture and compatible common data models that underpin a digital market of interoperable and replicable smart solutions in multiple sectors, starting with Smart Cities.
-- A smart data model includes four elements: the schema, or technical representation of the model defining the technical data types and structure, the specification of a written document for human readers, a URI with a working URL with basic data about the attribute or the entity, and the examples of the payloads for NGSIv2 and NGSI-LD versions.
+- Joint collaboration to support the adoption of a reference architecture and compatible common data models that underpin interoperable and replicable solutions in multiple sectors
+- A smart data model includes four elements: 
+    - The schema
+    - The specification of a written document for human readers
+    - URI with a working URL with basic data about the attribute or the entity
+    - Examples of the payloads for NGSIv2 and NGSI-LD versions.
 - All data models are public and of royalty-free nature. The licensing mode grants 3 rights to the users:
     - Free use
     - Free modification
