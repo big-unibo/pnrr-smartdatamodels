@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  build-quarto:
+    init: true
+    # restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: build-quarto
+    container_name: build-quarto
+    volumes:
+      - ./:/data
+    command: ["/bin/bash", "/data/build.sh"]
