@@ -55,10 +55,10 @@ FIWARE offers APIs to upload/get/update the data.
         curl --location 'http://localhost:1026/v2/entities/' \​
              --header 'Content-Type: application/json' \​
              --data ' {​
-                "id":"CropDevice010",
-                "type":"Device",​
-                "observedProperty": ["speed"],​
-                "value": [5]​
+                 "id":"CropDevice010",
+                 "type":"Device",​
+                 "observedProperty": ["speed"],​
+                 "value": [5]​
              }'
 
 # Smart data models
