@@ -104,3 +104,4 @@ An apparatus (hardware + software + firmware) intended to accomplish a particula
 
 - What is the volume and amount of data?
 - What are the main subjects of the analysis? In other words, what data are valuable for your analysis?
+- What do you expect from the platform to access the data?
