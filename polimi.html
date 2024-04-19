@@ -626,62 +626,6 @@
 <li>Simple (camera) vs composite (robot) device</li>
 </ul></li>
 </ul>
-</section>
-
-<section id="polimi-2024-04-18-1" class="title-slide slide level1 center">
-<h1>POLIMI (2024-04-18)</h1>
-<p>Contesto: ricerca su vigneto località Cadriano.</p>
-<p>Collezione dati:</p>
-<ul>
-<li>Raccolta di video multispettrali tramite diverse tipologie di telecamere (e.g.&nbsp;RGB, LIDAR Ouster OS0) posizionate su robot su 4 colture</li>
-<li>Ogni raccolta dati è di ~100GB​. 2 volte/mese​. 200 GB/mese​. 200GB * 8 mesi = 1.6TB​</li>
-<li>Bag ROS2 (5 telecamere). FILE ~100GB (check di FTP su performance, scp/rsync)​
-<ul>
-<li>Point cloud (lista 65K punti x, y, z). LIDAR margine di errore in mm​</li>
-<li><code>metadata.yaml</code>: fornisce info sulla ROS bag</li>
-<li>Immagini 2D (identificazione di frutti, proietto immagine in point cloud)​</li>
-</ul></li>
-</ul>
-<p>Goal analisi</p>
-<ul>
-<li>Riconoscere (e.g.&nbsp;clustering) ed estrarre informazioni sulle singole piante: contare fiori/frutti, stato di salute, livelli di azoto, etc. con l’obbiettivo di suggerire trattamenti (pesticidi, fertilizzanti, etc.)</li>
-</ul>
-</section>
-
-<section id="integration-steps-unibo-polimi-1" class="title-slide slide level1 center">
-<h1>Integration steps (UniBO + POLIMI)</h1>
-<ul>
-<li>Step 1: (UniBO) Mapping Cadriano</li>
-<li>Step 2: (POLIMI) Upload ROS bag and <code>metadata.yaml</code> files using FTP/SCP after every mission</li>
-<li>Step 3: (UniBO) visualization of such data in a georeferenced map</li>
-<li>Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)</li>
-<li>Step 5: (POLIMI) moving the processing to the platfrom using docker</li>
-</ul>
-</section>
-
-<section id="data-models-unibo-1" class="title-slide slide level1 center">
-<h1>Data models (UniBO)</h1>
-<ul>
-<li><em>AgriFarm</em>: mapping Cadriano</li>
-<li><em>Single tree</em>: completely missing in terms of data models. Do we need entities or is it a simple measurement?</li>
-<li><em>Task</em>: useful information from <code>metadata.yaml</code>
-<ul>
-<li>Goal: monitoring</li>
-<li>Data start/end</li>
-<li>Duration</li>
-<li>How many cameras/video streams</li>
-</ul></li>
-<li><em>Device</em>
-<ul>
-<li>Cameras (there is a specific entity <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml">Camera</a>)
-<ul>
-<li>How many FPS</li>
-<li>How many images per camera</li>
-<li>Positioning with respect to the center of mass of the robot</li>
-</ul></li>
-<li>Simple (camera) vs composite (robot) device</li>
-</ul></li>
-</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Spoke 3 - University of Bologna</p>
