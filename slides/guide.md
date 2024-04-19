@@ -194,14 +194,14 @@ Goal analisi
 
 # Data models (UniBO)
 
-- AgriFarm: mapping Cadriano 
-- Single tree/crop: completely missing in terms of data models. Do we need entities or is it a simple measurement?
-- Task: useful information from metadata.yaml
+- *AgriFarm*: mapping Cadriano 
+- *Single tree*: completely missing in terms of data models. Do we need entities or is it a simple measurement?
+- *Task*: useful information from metadata.yaml
     - Goal: monitoring
     - Data start/end
     - Duration
     - How many cameras/video streams
-- Device
+- *Device*
     - Cameras
         - How many FPS
         - How many images per camera
