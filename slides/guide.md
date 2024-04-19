@@ -55,8 +55,8 @@ FIWARE offers APIs to upload/get/update the data.
         curl --location 'http://localhost:1026/v2/entities/' \​
              --header 'Content-Type: application/json' \​
              --data ' {​
-                 "id":"CropDevice010",
-                 "type":"Device",​
+                 "id": "CropDevice010",
+                 "type": "Device",​
                  "observedProperty": ["speed"],​
                  "value": [5]​
              }'
@@ -177,7 +177,7 @@ Collezione dati:
 - Ogni raccolta dati è di ~100GB​. 2 volte/mese​. 200 GB/mese​. 200GB * 8 mesi = 1.6TB​
 - Bag ROS2 (5 telecamere). FILE ~100GB (check di FTP su performance, scp/rsync)​
     - Point cloud (lista 65K punti x, y, z). LIDAR margine di errore in mm​
-    - metadata.yaml: fornisce info sulla ROS bag
+    - `metadata.yaml`: fornisce info sulla ROS bag
     - Immagini 2D (identificazione di frutti, proietto immagine in point cloud)​
    
 Goal analisi
@@ -187,16 +187,16 @@ Goal analisi
 # Integration steps
 
 - Step 1: (UniBO) Mapping Cadriano
-- Step 2: Upload ROS bag and `metadata.yaml` files using FTP/SCP after every mission
+- Step 2: (POLIMI) Upload ROS bag and `metadata.yaml` files using FTP/SCP after every mission
 - Step 3: (UniBO) visualization of such data in a georeferenced map
-- Step 4: Upload the synthetic/processed data from bags (computed outside the platform)
-- Step 5: Moving the processing to the platfrom
+- Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)
+- Step 5: (POLIMI) moving the processing to the platfrom using docker
 
 # Data models (UniBO)
 
 - *AgriFarm*: mapping Cadriano 
 - *Single tree*: completely missing in terms of data models. Do we need entities or is it a simple measurement?
-- *Task*: useful information from metadata.yaml
+- *Task*: useful information from `metadata.yaml`
     - Goal: monitoring
     - Data start/end
     - Duration
