@@ -457,8 +457,8 @@
 <pre><code>  curl --location 'http://localhost:1026/v2/entities/' \​
        --header 'Content-Type: application/json' \​
        --data ' {​
-           "id":"CropDevice010",
-           "type":"Device",​
+           "id": "CropDevice010",
+           "type": "Device",​
            "observedProperty": ["speed"],​
            "value": [5]​
        }'</code></pre></li>
@@ -582,7 +582,7 @@
 <li>Bag ROS2 (5 telecamere). FILE ~100GB (check di FTP su performance, scp/rsync)​
 <ul>
 <li>Point cloud (lista 65K punti x, y, z). LIDAR margine di errore in mm​</li>
-<li>metadata.yaml: fornisce info sulla ROS bag</li>
+<li><code>metadata.yaml</code>: fornisce info sulla ROS bag</li>
 <li>Immagini 2D (identificazione di frutti, proietto immagine in point cloud)​</li>
 </ul></li>
 </ul>
@@ -596,10 +596,10 @@
 <h1>Integration steps</h1>
 <ul>
 <li>Step 1: (UniBO) Mapping Cadriano</li>
-<li>Step 2: Upload ROS bag and <code>metadata.yaml</code> files using FTP/SCP after every mission</li>
+<li>Step 2: (POLIMI) Upload ROS bag and <code>metadata.yaml</code> files using FTP/SCP after every mission</li>
 <li>Step 3: (UniBO) visualization of such data in a georeferenced map</li>
-<li>Step 4: Upload the synthetic/processed data from bags (computed outside the platform)</li>
-<li>Step 5: Moving the processing to the platfrom</li>
+<li>Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)</li>
+<li>Step 5: (POLIMI) moving the processing to the platfrom using docker</li>
 </ul>
 </section>
 
@@ -608,7 +608,7 @@
 <ul>
 <li><em>AgriFarm</em>: mapping Cadriano</li>
 <li><em>Single tree</em>: completely missing in terms of data models. Do we need entities or is it a simple measurement?</li>
-<li><em>Task</em>: useful information from metadata.yaml
+<li><em>Task</em>: useful information from <code>metadata.yaml</code>
 <ul>
 <li>Goal: monitoring</li>
 <li>Data start/end</li>
