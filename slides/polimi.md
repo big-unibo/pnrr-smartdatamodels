@@ -6,7 +6,7 @@ format:
     footer: "Spoke 3 - University of Bologna"
 ---
 
-{{ include polimi.md}}
+{{< include polimi.md >}}
 
 # POLIMI (2024-04-18)
 
