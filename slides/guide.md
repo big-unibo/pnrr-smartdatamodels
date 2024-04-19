@@ -187,7 +187,7 @@ Goal analisi
 # Integration steps
 
 - Step 1: (UniBO) Mapping Cadriano
-- Step 2: Upload ROS bag and metadata.yaml files using FTP/SCP
+- Step 2: Upload ROS bag and `metadata.yaml` files using FTP/SCP
 - Step 3: (UniBO) visualization of such data in a georeferenced map
 - Step 4: Upload the synthetic/processed data from bags (computed outside the platform)
 - Step 5: Moving the processing to the platfrom
