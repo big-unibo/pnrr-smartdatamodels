@@ -3,9 +3,7 @@ services:
   build-quarto:
     init: true
     # restart: always
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: w4bo/quarto-slides:1.0.0
     hostname: build-quarto
     container_name: build-quarto
     volumes:

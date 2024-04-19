@@ -16,9 +16,9 @@ Two levels of integration
 
 1. *Data*
     1. Upload raw data
-    2. Process your data on your machine and upload processed data
+    2. Process your data on your machine and upload the processed data
 2. *Processes*
-    3. Move the processing directly to the platform
+    3. Move the processing to the platform
 
 Collection APIs​
 
@@ -83,27 +83,127 @@ Some examples:
 - [Device (Measurement + Agent)​](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml)
 - [DeviceMeasurement (Measurement)​](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/DeviceMeasurement/swagger.yaml)
 
+# Questions on data collection and integration
+
+1. Describe the processes for collecting/producing the data
+    1. What is the volume and amount of data?
+    1. What are the main subjects of the analysis? In other words, what data are valuable for your analysis?
+1. What are the potential FIWARE data models to represent your data?
+
 # Example: [Device](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Device/swagger.yaml)
 
 An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).
 
 ```js
 {
-  "id": "device-9845A",
-  "type": "Device",
-  "deviceCategory": ["sensor"],
-  "controlledProperty": ["fillingLevel", "temperature"],
-  "batteryLevel": 0.75,
-  "serialNumber": "9845A",
-  "value": [D0.22, 21.2],
-  "deviceState": "ok",
-  "dateFirstUsed": "2014-09-11T11:00:00Z",
-  "owner": ["http://person.org/leon"]
+    "id": "device-9845A",
+    "name": "Top-right Camera",
+    "type": "Device",
+    "deviceCategory": ["sensor"],
+    "controlledProperty": ["fillingLevel", "temperature"],
+    "value": [D0.22, 21.2],
+    "batteryLevel": 0.75,
+    "serialNumber": "9845A",
+    "deviceState": "ok",
+    "dateFirstUsed": "2014-09-11T11:00:00Z",
+    "owner": ["http://person.org/leon"],
+    "location": {
+        "type": "Point",
+        "coordinates": [-3.48043, 40.31308]
+    }
 }
 ```
 
-# Questions on data collection
+# Example: [AgriFarm](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml) and [AgriParcel](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)
 
-- What is the volume and amount of data?
-- What are the main subjects of the analysis? In other words, what data are valuable for your analysis?
-- What do you expect from the platform to access the data?
+**AgriFarm**: a generic farm made up of buildings and parcels
+
+```js
+{
+    "id": "urn:ngsi-ld:AgriFarm:001",
+    "name": "Wheat farm",
+    "type": "AgriFarm",
+    "description": "A farm producing wheat",
+    "dateCreated": "2017-01-01T01:20:00Z",
+    "dateModified": "2017-05-04T12:30:00Z",
+    "location": {
+        "type": "Polygon",
+        "coordinates": [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]
+    },
+    "ownedBy": "urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c",
+    "hasAgriParcel": [
+        "urn:ngsi-ld:AgriParcel:001" //, ...
+    ]
+    "hasBuilding": [ ... ],
+}
+```
+
+**AgriParcel**: a generic parcel of land
+
+```js
+{
+    "id": "urn:ngsi-ld:AgriParcel:001",
+    "type": "AgriParcel",
+    "dateCreated": "2017-01-01T01:20:00Z",
+    "dateModified": "2017-05-04T12:30:00Z",
+    "location": {
+        "type": "Polygon",
+        "coordinates": // ...
+    },
+    "area": 200,
+    "description": "Spring wheat",
+    "category": "arable",
+    "belongsTo": "urn:ngsi-ld:AgriFarm:001",
+    "ownedBy": "urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c",
+    "hasAgriCrop": "urn:ngsi-ld:AgriCrop:36021150-4474-11e8-a721-af07c5fae7c8",
+    "cropStatus": "seeded",
+    "lastPlantedAt": "2016-08-23T10:18:16Z",
+    "hasAgriSoil": "urn:ngsi-ld:AgriSoil:429d1338-4474-11e8-b90a-d3e34ceb73df",
+    "hasDevice": [
+        "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6", // ...
+    ],
+    "soilTextureType": "Clay",
+    "irrigationSystemType": "Drip irrigation"
+}
+```
+
+# POLIMI (2024-04-18)
+
+Contesto: ricerca su vigneto località Cadriano.
+
+Collezione dati:
+
+- Raccolta di video multispettrali tramite diverse tipologie di telecamere (e.g. RGB, LIDAR Ouster OS0) posizionate su robot su 4 colture
+- Ogni raccolta dati è di ~100GB​. 2 volte/mese​. 200 GB/mese​. 200GB * 8 mesi = 1.6TB​
+- Bag ROS2 (5 telecamere). FILE ~100GB (check di FTP su performance, scp/rsync)​
+    - Point cloud (lista 65K punti x, y, z). LIDAR margine di errore in mm​
+    - metadata.yaml: fornisce info sulla ROS bag
+    - Immagini 2D (identificazione di frutti, proietto immagine in point cloud)​
+   
+Goal analisi
+
+- Riconoscere (e.g. clustering) ed estrarre informazioni sulle singole piante: contare fiori/frutti, stato di salute, livelli di azoto, etc. con l'obbiettivo di suggerire trattamenti (pesticidi, fertilizzanti, etc.)
+
+# Integration steps
+
+1. Step 1: (UniBO) Mapping Cadriano
+1. Step 2: Upload ROS bag and metadata.yaml files using FTP/SCP
+1. Step 3: (UniBO) visualization of such data in a georeferenced map
+1. Step 4: Upload the synthetic/processed data from bags (computed outside the platform)
+1. Step 5: Moving the processing to the platfrom
+
+# Data models (UniBO)
+
+- AgriFarm: mapping Cadriano 
+- Single tree/crop: completely missing in terms of data models. Do we need entities or is it a simple measurement?
+- Task: useful information from metadata.yaml
+    - Goal: monitoring
+    - Data start/end
+    - Duration
+    - How many cameras/video streams
+- Device
+    - Cameras
+        - How many FPS
+        - How many images per camera
+        - Positioning with respect to the center of mass of the robot
+    - Simple (camera) vs composite (robot) device
