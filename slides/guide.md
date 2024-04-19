@@ -184,7 +184,7 @@ Goal analisi
 
 - Riconoscere (e.g. clustering) ed estrarre informazioni sulle singole piante: contare fiori/frutti, stato di salute, livelli di azoto, etc. con l'obbiettivo di suggerire trattamenti (pesticidi, fertilizzanti, etc.)
 
-# Integration steps
+# Integration steps (UniBO + POLIMI)
 
 - Step 1: (UniBO) Mapping Cadriano
 - Step 2: (POLIMI) Upload ROS bag and `metadata.yaml` files using FTP/SCP after every mission
