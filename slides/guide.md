@@ -202,7 +202,7 @@ Goal analisi
     - Duration
     - How many cameras/video streams
 - *Device*
-    - Cameras
+    - Cameras (there is a specific entity [Camera](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml))
         - How many FPS
         - How many images per camera
         - Positioning with respect to the center of mass of the robot
