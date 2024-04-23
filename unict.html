@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="guide_files/libs/clipboard/clipboard.min.js"></script>
-<script src="guide_files/libs/quarto-html/tabby.min.js"></script>
-<script src="guide_files/libs/quarto-html/popper.min.js"></script>
-<script src="guide_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="guide_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="guide_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="guide_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="guide_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="unict_files/libs/clipboard/clipboard.min.js"></script>
+<script src="unict_files/libs/quarto-html/tabby.min.js"></script>
+<script src="unict_files/libs/quarto-html/popper.min.js"></script>
+<script src="unict_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="unict_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="unict_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="unict_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="unict_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
   <meta name="dcterms.date" content="2024-04-18">
@@ -15,8 +15,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="unict_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="unict_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,11 +95,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="guide_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="guide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="guide_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="guide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="guide_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="unict_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="unict_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="unict_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="unict_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="unict_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -570,6 +570,58 @@
 <span id="cb4-22"><a href=""></a>    <span class="st">"soilTextureType"</span><span class="op">:</span> <span class="st">"Clay"</span><span class="op">,</span></span>
 <span id="cb4-23"><a href=""></a>    <span class="st">"irrigationSystemType"</span><span class="op">:</span> <span class="st">"Drip irrigation"</span></span>
 <span id="cb4-24"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
+<section id="unict-2024-04-23" class="title-slide slide level1 center">
+<h1>UniCT (2024-04-23)</h1>
+<p><em>Contesto &amp; goal analisi</em>: stima di probabilità basati su dati georeferenziati</p>
+<p><em>Collezione dati</em>:</p>
+<ul>
+<li>Dati in input:
+<ul>
+<li>Globali: soil grid (raster). Ho degli indicatori per porzione di suolo</li>
+<li>Regionali: shapefile regionale. No farm.</li>
+<li>Più immagini e più tipi di sorgenti (38 raster/variabili differenti: meteo, crop, …)</li>
+</ul></li>
+<li>Output principale:
+<ul>
+<li>Tiff (raster): mappe di presenza/assenza. Ogni pixel contiene 0/1 se non c’è/c’è la pianta</li>
+<li>Shapefile (vettoriale): altri output, non particolarmente utile per la piattaforma</li>
+</ul></li>
+</ul>
+<p><em>Tecnologie</em>:</p>
+<ul>
+<li>QGIS per analizzare dati</li>
+<li>Maxent: Taglio di raster in base a area di studio, campionamento, e cambio sistema di riferimento</li>
+<li>Vistassm (alternativa a notebook R/python)</li>
+<li>ML: random forest, BRT, …</li>
+</ul>
+</section>
+
+<section id="integration-steps-unibo-unict" class="title-slide slide level1 center">
+<h1>Integration steps (UniBO + UniCT)</h1>
+<ul>
+<li>Step 1 (UniBO):
+<ul>
+<li>Scegliere sistema di riferimento. WGS84, UTM (cartografiche). GeoServer.</li>
+<li>Accesso a FTP</li>
+</ul></li>
+<li>Step 2 (UniCT): Quali parametri inserire nel descrittore JSON?
+<ul>
+<li>Coltura e SDM</li>
+<li>Predittori scelti e iperparametri (e.g., per Maxent)</li>
+<li>… TODO</li>
+</ul></li>
+<li>Step 3 (UniCT): Caricare mappa di presenza/assenza e descrittore JSON</li>
+</ul>
+</section>
+
+<section id="data-models-unibo" class="title-slide slide level1 center">
+<h1>Data models (UniBO)</h1>
+<ul>
+<li>Principalmente Measurement &amp; Environment</li>
+<li>No farm, si mappa tutta l’area della Sicilia</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Spoke 3 - University of Bologna</p>
@@ -580,19 +632,19 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="guide_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="unict_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="guide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="guide_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="guide_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="unict_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
