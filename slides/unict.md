@@ -20,7 +20,7 @@ format:
     - Più immagini e più tipi di sorgenti (38 raster/variabili differenti: meteo, crop, ...)
 - Output principale: 
     - Tiff (raster): mappe di presenza/assenza. Ogni pixel contiene 0/1 se non c'è/c'è la pianta
-    - Shapefile (vettoriale): altri output, non particolarmente utile per la piattaforma
+    - Shapefile (vettoriale): altri output, non particolarmente utile al momento per la piattaforma
 
 *Tecnologie*:
 
