@@ -1,0 +1,3 @@
+Criticità:
+
+- Gestione licenze

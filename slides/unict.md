@@ -16,8 +16,8 @@
 
 *Tecnologie*:
 
-- QGIS per analizzare dati
-- Maxent: Taglio di raster in base a area di studio, campionamento, e cambio sistema di riferimento
+- QGIS: analizzare dati spaziali
+- Maxent: taglio di raster in base a *area di studio*, campionamento, e cambio sistema di riferimento
 - Vistassm (alternativa a notebook R/python)
 - ML: random forest, BRT, ...
 
@@ -35,4 +35,4 @@
 # Data models (UniBO)
 
 - Principalmente Measurement & Environment
-- No farm, si mappa tutta l'area della Sicilia
+- No farm, si mappa tutta l'area della Sicilia. Serve possibile estensione di AgriParcel?
