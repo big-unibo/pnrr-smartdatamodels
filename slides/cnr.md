@@ -23,10 +23,12 @@ Tecnologie:
 # Integration steps (UniBO + CNR)
 
 - Step 1: (UniBO) condivisione e flusso in uscita dati meteo ARPAE (sia in formato GRIB originale e corrispettivo tabellare)
+    - Invio sample dato ARPAE
     - Giorno: latitudine e longitudine del centro del riquadro, con valori di temperatura, piogge, e umidità
     - Preparare API: data la lat/lon del giorno, restituire i dati meteo. GET con punto spaziale e range di date (max 3/4 mesi)
-    - Invio sample dato ARPAE
-- Step 2: (CNR) raccolta informazioni
+- Step 2: (CNR)
+    - Cosa c'è in ogni cella?
+    - Formato dell'output (GRIB? altro?)
 
 # Data models (UniBO)
 

@@ -146,10 +146,10 @@ A Data Model for camera installations in a city.
     ]
   },
   "cameraNum": 2,
-  "on": true,
-
+  "on": true
 }
 ```
+
 # Example: [AgriFarm](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml) and [AgriParcel](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)
 
 **AgriFarm**: a generic farm made up of buildings and parcels
