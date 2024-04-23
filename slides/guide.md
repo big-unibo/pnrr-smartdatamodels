@@ -8,7 +8,7 @@ format:
 
 # Data platform
 
-![The data platform](https://github.com/big-unibo/pnrr-smartdatamodels/assets/18005592/68bac582-6104-4cc7-b514-c1e837600a9d)
+![The data platform](https://github.com/w4bo/img-dump/assets/18005592/92c7a892-daec-4c17-851f-b05dba44c92e)
 
 # Integration with the data platform
 
@@ -101,7 +101,7 @@ An apparatus (hardware + software + firmware) intended to accomplish a particula
     "type": "Device",
     "deviceCategory": ["sensor"],
     "controlledProperty": ["fillingLevel", "temperature"],
-    "value": [D0.22, 21.2],
+    "value": [0.22, 21.2],
     "batteryLevel": 0.75,
     "serialNumber": "9845A",
     "deviceState": "ok",
