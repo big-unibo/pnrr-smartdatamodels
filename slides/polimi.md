@@ -1,11 +1,3 @@
----
-title: Introduction to data platform integration and smart data models
-date: 2024-04-18
-format:
-  revealjs: 
-    footer: "Spoke 3 - University of Bologna"
----
-
 {{< include guide.md >}}
 
 # POLIMI (2024-04-18)
