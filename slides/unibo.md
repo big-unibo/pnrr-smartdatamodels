@@ -4,3 +4,4 @@ Criticità:
     - Software
     - Condivisione dati
 - Iperparametri/algoritmi
+- Measurement derivati

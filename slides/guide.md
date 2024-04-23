@@ -127,7 +127,9 @@ A Data Model for camera installations in a city.
   "id": "urn:ngsi-ld:Camera:Cam2",
   "type": "Camera",
   "cameraName": "Cam2",
+  "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",
   "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",
+  "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",
   "cameraUsage": "SURVEILLANCE",
   "cameraType": "FIXED",
   "endDateTime": "2021-05-11T06:35:20.065Z",
@@ -145,8 +147,7 @@ A Data Model for camera installations in a city.
   },
   "cameraNum": 2,
   "on": true,
-  "imageSnapshot": "https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing",
-  "streamName": "Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2",
+
 }
 ```
 # Example: [AgriFarm](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml) and [AgriParcel](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)

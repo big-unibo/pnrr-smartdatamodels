@@ -24,9 +24,9 @@ Tecnologie:
 
 - Step 1: (UniBO) condivisione e flusso in uscita dati meteo ARPAE (sia in formato GRIB originale e corrispettivo tabellare)
     - Giorno: latitudine e longitudine del centro del riquadro, con valori di temperatura, piogge, e umidità
-    - Preparare API: data la lat/lon del giorno, restituire i dati meteo
+    - Preparare API: data la lat/lon del giorno, restituire i dati meteo. GET con punto spaziale e range di date (max 3/4 mesi)
     - Invio sample dato ARPAE
-- Step 2: (CNR) ...
+- Step 2: (CNR) raccolta informazioni
 
 # Data models (UniBO)
 
