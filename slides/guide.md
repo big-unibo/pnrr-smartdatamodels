@@ -120,6 +120,8 @@ An apparatus (hardware + software + firmware) intended to accomplish a particula
 
 # Example: [Camera](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml)
 
+A Data Model for camera installations in a city.
+
 ```js
 {
   "id": "urn:ngsi-ld:Camera:Cam2",
