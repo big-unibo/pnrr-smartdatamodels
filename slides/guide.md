@@ -31,6 +31,10 @@ Data processes​
 - **User**: black-box processes that implement partner-specific analytics (Docker containers)​
     - Abbiamo acquistato 2 GPU NVIDIA RTX™ 6000 Ada Generation (48 GB GDDR6)
 
+# Data model
+
+![Data model](https://github.com/w4bo/img-dump/assets/18005592/6eb62a1e-084c-4dbe-ae4b-a94652ac0edb)
+
 # Data collection
 
 Data collection comes with 2 (main) interfaces: FTP and FIWARE
