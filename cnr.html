@@ -556,9 +556,8 @@
 <span id="cb3-21"><a href=""></a>    ]</span>
 <span id="cb3-22"><a href=""></a>  }<span class="op">,</span></span>
 <span id="cb3-23"><a href=""></a>  <span class="st">"cameraNum"</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
-<span id="cb3-24"><a href=""></a>  <span class="st">"on"</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-25"><a href=""></a></span>
-<span id="cb3-26"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-24"><a href=""></a>  <span class="st">"on"</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb3-25"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
 <section id="example-agrifarm-and-agriparcel-agrifood-domain" class="title-slide slide level1 center">
@@ -636,11 +635,15 @@
 <ul>
 <li>Step 1: (UniBO) condivisione e flusso in uscita dati meteo ARPAE (sia in formato GRIB originale e corrispettivo tabellare)
 <ul>
+<li>Invio sample dato ARPAE</li>
 <li>Giorno: latitudine e longitudine del centro del riquadro, con valori di temperatura, piogge, e umidità</li>
 <li>Preparare API: data la lat/lon del giorno, restituire i dati meteo. GET con punto spaziale e range di date (max 3/4 mesi)</li>
-<li>Invio sample dato ARPAE</li>
 </ul></li>
-<li>Step 2: (CNR) raccolta informazioni</li>
+<li>Step 2: (CNR)
+<ul>
+<li>Cosa c’è in ogni cella?</li>
+<li>Formato dell’output (GRIB? altro?)</li>
+</ul></li>
 </ul>
 </section>
 
