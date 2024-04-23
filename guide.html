@@ -530,51 +530,80 @@
 <span id="cb2-17"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
+<section id="example-camera" class="title-slide slide level1 center">
+<h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml">Camera</a></h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href=""></a>{</span>
+<span id="cb3-2"><a href=""></a>  <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Camera:Cam2"</span><span class="op">,</span></span>
+<span id="cb3-3"><a href=""></a>  <span class="st">"type"</span><span class="op">:</span> <span class="st">"Camera"</span><span class="op">,</span></span>
+<span id="cb3-4"><a href=""></a>  <span class="st">"cameraName"</span><span class="op">:</span> <span class="st">"Cam2"</span><span class="op">,</span></span>
+<span id="cb3-5"><a href=""></a>  <span class="st">"streamURL"</span><span class="op">:</span> <span class="st">"https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing"</span><span class="op">,</span></span>
+<span id="cb3-6"><a href=""></a>  <span class="st">"cameraUsage"</span><span class="op">:</span> <span class="st">"SURVEILLANCE"</span><span class="op">,</span></span>
+<span id="cb3-7"><a href=""></a>  <span class="st">"cameraType"</span><span class="op">:</span> <span class="st">"FIXED"</span><span class="op">,</span></span>
+<span id="cb3-8"><a href=""></a>  <span class="st">"endDateTime"</span><span class="op">:</span> <span class="st">"2021-05-11T06:35:20.065Z"</span><span class="op">,</span></span>
+<span id="cb3-9"><a href=""></a>  <span class="st">"startDateTime"</span><span class="op">:</span> <span class="st">"2021-05-11T06:30:00.020Z"</span><span class="op">,</span></span>
+<span id="cb3-10"><a href=""></a>  <span class="st">"cameraOrientation"</span><span class="op">:</span> {</span>
+<span id="cb3-11"><a href=""></a>    <span class="st">"comments"</span><span class="op">:</span> <span class="st">"Camera facing RSBhawan"</span><span class="op">,</span></span>
+<span id="cb3-12"><a href=""></a>    <span class="st">"annotatedMap"</span><span class="op">:</span> <span class="st">"https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"</span></span>
+<span id="cb3-13"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb3-14"><a href=""></a>  <span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb3-15"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
+<span id="cb3-16"><a href=""></a>    <span class="st">"coordinates"</span><span class="op">:</span> [</span>
+<span id="cb3-17"><a href=""></a>      <span class="fl">91.28076</span><span class="op">,</span></span>
+<span id="cb3-18"><a href=""></a>      <span class="fl">23.831796</span></span>
+<span id="cb3-19"><a href=""></a>    ]</span>
+<span id="cb3-20"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb3-21"><a href=""></a>  <span class="st">"cameraNum"</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
+<span id="cb3-22"><a href=""></a>  <span class="st">"on"</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-23"><a href=""></a>  <span class="st">"imageSnapshot"</span><span class="op">:</span> <span class="st">"https://drive.google.com/file/d/1cLMYzvbaciGcRRD0HV3MAoK4XbNkOukr/view?usp=sharing"</span><span class="op">,</span></span>
+<span id="cb3-24"><a href=""></a>  <span class="st">"streamName"</span><span class="op">:</span> <span class="st">"Agartala_OrientChowmuhani_Surv_Fixed_RSBhawan_Cam2"</span><span class="op">,</span></span>
+<span id="cb3-25"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
 <section id="example-agrifarm-and-agriparcel-agrifood-domain" class="title-slide slide level1 center">
 <h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml">AgriFarm</a> and <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml">AgriParcel</a> (<a href="https://github.com/smart-data-models/dataModel.Agrifood">AgriFood</a> domain)</h1>
 <p><strong>AgriFarm</strong>: a generic farm made up of buildings and parcels</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href=""></a>{</span>
-<span id="cb3-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriFarm:001"</span><span class="op">,</span></span>
-<span id="cb3-3"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"Wheat farm"</span><span class="op">,</span></span>
-<span id="cb3-4"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"AgriFarm"</span><span class="op">,</span></span>
-<span id="cb3-5"><a href=""></a>    <span class="st">"description"</span><span class="op">:</span> <span class="st">"A farm producing wheat"</span><span class="op">,</span></span>
-<span id="cb3-6"><a href=""></a>    <span class="st">"dateCreated"</span><span class="op">:</span> <span class="st">"2017-01-01T01:20:00Z"</span><span class="op">,</span></span>
-<span id="cb3-7"><a href=""></a>    <span class="st">"dateModified"</span><span class="op">:</span> <span class="st">"2017-05-04T12:30:00Z"</span><span class="op">,</span></span>
-<span id="cb3-8"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
-<span id="cb3-9"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Polygon"</span><span class="op">,</span></span>
-<span id="cb3-10"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> [[[<span class="dv">100</span><span class="op">,</span> <span class="dv">0</span>]<span class="op">,</span> [<span class="dv">101</span><span class="op">,</span> <span class="dv">0</span>]<span class="op">,</span> [<span class="dv">101</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> [<span class="dv">100</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> [<span class="dv">100</span><span class="op">,</span> <span class="dv">0</span>]]]</span>
-<span id="cb3-11"><a href=""></a>    }<span class="op">,</span></span>
-<span id="cb3-12"><a href=""></a>    <span class="st">"ownedBy"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"</span><span class="op">,</span></span>
-<span id="cb3-13"><a href=""></a>    <span class="st">"hasAgriParcel"</span><span class="op">:</span> [</span>
-<span id="cb3-14"><a href=""></a>        <span class="st">"urn:ngsi-ld:AgriParcel:001"</span> <span class="co">//, ...</span></span>
-<span id="cb3-15"><a href=""></a>    ]</span>
-<span id="cb3-16"><a href=""></a>    <span class="st">"hasBuilding"</span><span class="op">:</span> [ <span class="op">...</span> ]<span class="op">,</span></span>
-<span id="cb3-17"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>AgriParcel</strong>: a generic parcel of land</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href=""></a>{</span>
-<span id="cb4-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriParcel:001"</span><span class="op">,</span></span>
-<span id="cb4-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"AgriParcel"</span><span class="op">,</span></span>
-<span id="cb4-4"><a href=""></a>    <span class="st">"dateCreated"</span><span class="op">:</span> <span class="st">"2017-01-01T01:20:00Z"</span><span class="op">,</span></span>
-<span id="cb4-5"><a href=""></a>    <span class="st">"dateModified"</span><span class="op">:</span> <span class="st">"2017-05-04T12:30:00Z"</span><span class="op">,</span></span>
-<span id="cb4-6"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
-<span id="cb4-7"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Polygon"</span><span class="op">,</span></span>
-<span id="cb4-8"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> <span class="co">// ...</span></span>
-<span id="cb4-9"><a href=""></a>    }<span class="op">,</span></span>
-<span id="cb4-10"><a href=""></a>    <span class="st">"area"</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span></span>
-<span id="cb4-11"><a href=""></a>    <span class="st">"description"</span><span class="op">:</span> <span class="st">"Spring wheat"</span><span class="op">,</span></span>
-<span id="cb4-12"><a href=""></a>    <span class="st">"category"</span><span class="op">:</span> <span class="st">"arable"</span><span class="op">,</span></span>
-<span id="cb4-13"><a href=""></a>    <span class="st">"belongsTo"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriFarm:001"</span><span class="op">,</span></span>
-<span id="cb4-14"><a href=""></a>    <span class="st">"ownedBy"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"</span><span class="op">,</span></span>
-<span id="cb4-15"><a href=""></a>    <span class="st">"hasAgriCrop"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriCrop:36021150-4474-11e8-a721-af07c5fae7c8"</span><span class="op">,</span></span>
-<span id="cb4-16"><a href=""></a>    <span class="st">"cropStatus"</span><span class="op">:</span> <span class="st">"seeded"</span><span class="op">,</span></span>
-<span id="cb4-17"><a href=""></a>    <span class="st">"lastPlantedAt"</span><span class="op">:</span> <span class="st">"2016-08-23T10:18:16Z"</span><span class="op">,</span></span>
-<span id="cb4-18"><a href=""></a>    <span class="st">"hasAgriSoil"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriSoil:429d1338-4474-11e8-b90a-d3e34ceb73df"</span><span class="op">,</span></span>
-<span id="cb4-19"><a href=""></a>    <span class="st">"hasDevice"</span><span class="op">:</span> [</span>
-<span id="cb4-20"><a href=""></a>        <span class="st">"urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6"</span><span class="op">,</span> <span class="co">// ...</span></span>
-<span id="cb4-21"><a href=""></a>    ]<span class="op">,</span></span>
-<span id="cb4-22"><a href=""></a>    <span class="st">"soilTextureType"</span><span class="op">:</span> <span class="st">"Clay"</span><span class="op">,</span></span>
-<span id="cb4-23"><a href=""></a>    <span class="st">"irrigationSystemType"</span><span class="op">:</span> <span class="st">"Drip irrigation"</span></span>
-<span id="cb4-24"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriFarm:001"</span><span class="op">,</span></span>
+<span id="cb4-3"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"Wheat farm"</span><span class="op">,</span></span>
+<span id="cb4-4"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"AgriFarm"</span><span class="op">,</span></span>
+<span id="cb4-5"><a href=""></a>    <span class="st">"description"</span><span class="op">:</span> <span class="st">"A farm producing wheat"</span><span class="op">,</span></span>
+<span id="cb4-6"><a href=""></a>    <span class="st">"dateCreated"</span><span class="op">:</span> <span class="st">"2017-01-01T01:20:00Z"</span><span class="op">,</span></span>
+<span id="cb4-7"><a href=""></a>    <span class="st">"dateModified"</span><span class="op">:</span> <span class="st">"2017-05-04T12:30:00Z"</span><span class="op">,</span></span>
+<span id="cb4-8"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb4-9"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Polygon"</span><span class="op">,</span></span>
+<span id="cb4-10"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> [[[<span class="dv">100</span><span class="op">,</span> <span class="dv">0</span>]<span class="op">,</span> [<span class="dv">101</span><span class="op">,</span> <span class="dv">0</span>]<span class="op">,</span> [<span class="dv">101</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> [<span class="dv">100</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> [<span class="dv">100</span><span class="op">,</span> <span class="dv">0</span>]]]</span>
+<span id="cb4-11"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb4-12"><a href=""></a>    <span class="st">"ownedBy"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"</span><span class="op">,</span></span>
+<span id="cb4-13"><a href=""></a>    <span class="st">"hasAgriParcel"</span><span class="op">:</span> [</span>
+<span id="cb4-14"><a href=""></a>        <span class="st">"urn:ngsi-ld:AgriParcel:001"</span> <span class="co">//, ...</span></span>
+<span id="cb4-15"><a href=""></a>    ]</span>
+<span id="cb4-16"><a href=""></a>    <span class="st">"hasBuilding"</span><span class="op">:</span> [ <span class="op">...</span> ]<span class="op">,</span></span>
+<span id="cb4-17"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>AgriParcel</strong>: a generic parcel of land</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href=""></a>{</span>
+<span id="cb5-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriParcel:001"</span><span class="op">,</span></span>
+<span id="cb5-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"AgriParcel"</span><span class="op">,</span></span>
+<span id="cb5-4"><a href=""></a>    <span class="st">"dateCreated"</span><span class="op">:</span> <span class="st">"2017-01-01T01:20:00Z"</span><span class="op">,</span></span>
+<span id="cb5-5"><a href=""></a>    <span class="st">"dateModified"</span><span class="op">:</span> <span class="st">"2017-05-04T12:30:00Z"</span><span class="op">,</span></span>
+<span id="cb5-6"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb5-7"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Polygon"</span><span class="op">,</span></span>
+<span id="cb5-8"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> <span class="co">// ...</span></span>
+<span id="cb5-9"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb5-10"><a href=""></a>    <span class="st">"area"</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span></span>
+<span id="cb5-11"><a href=""></a>    <span class="st">"description"</span><span class="op">:</span> <span class="st">"Spring wheat"</span><span class="op">,</span></span>
+<span id="cb5-12"><a href=""></a>    <span class="st">"category"</span><span class="op">:</span> <span class="st">"arable"</span><span class="op">,</span></span>
+<span id="cb5-13"><a href=""></a>    <span class="st">"belongsTo"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriFarm:001"</span><span class="op">,</span></span>
+<span id="cb5-14"><a href=""></a>    <span class="st">"ownedBy"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"</span><span class="op">,</span></span>
+<span id="cb5-15"><a href=""></a>    <span class="st">"hasAgriCrop"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriCrop:36021150-4474-11e8-a721-af07c5fae7c8"</span><span class="op">,</span></span>
+<span id="cb5-16"><a href=""></a>    <span class="st">"cropStatus"</span><span class="op">:</span> <span class="st">"seeded"</span><span class="op">,</span></span>
+<span id="cb5-17"><a href=""></a>    <span class="st">"lastPlantedAt"</span><span class="op">:</span> <span class="st">"2016-08-23T10:18:16Z"</span><span class="op">,</span></span>
+<span id="cb5-18"><a href=""></a>    <span class="st">"hasAgriSoil"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriSoil:429d1338-4474-11e8-b90a-d3e34ceb73df"</span><span class="op">,</span></span>
+<span id="cb5-19"><a href=""></a>    <span class="st">"hasDevice"</span><span class="op">:</span> [</span>
+<span id="cb5-20"><a href=""></a>        <span class="st">"urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6"</span><span class="op">,</span> <span class="co">// ...</span></span>
+<span id="cb5-21"><a href=""></a>    ]<span class="op">,</span></span>
+<span id="cb5-22"><a href=""></a>    <span class="st">"soilTextureType"</span><span class="op">:</span> <span class="st">"Clay"</span><span class="op">,</span></span>
+<span id="cb5-23"><a href=""></a>    <span class="st">"irrigationSystemType"</span><span class="op">:</span> <span class="st">"Drip irrigation"</span></span>
+<span id="cb5-24"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Spoke 3 - University of Bologna</p>
