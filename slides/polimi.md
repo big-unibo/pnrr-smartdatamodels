@@ -23,16 +23,19 @@ Goal analisi
 - Step 2: (POLIMI) Upload ROS bag and `metadata.yaml` files using FTP/SCP after every mission
 - Step 3: (UniBO) visualization of such data in a georeferenced map
 - Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)
-- Step 5: (POLIMI) moving the processing to the platfrom using docker
+- Step 5: (POLIMI) moving the processing to the platform using docker
 
 # Data models (UniBO)
 
-- *AgriFarm*: mapping Cadriano 
+- Meteo potrebbe servire per post-processing
+- *AgriFarm*: mapping Cadriano. Sentire con contatti (~fine Maggio) per avere rilevazioni GPS puntuali e fare mappatura.
 - *Single tree*: completely missing in terms of data models. Do we need entities or is it a simple measurement?
 - *Task*: useful information from `metadata.yaml`
+    - Name/Description (linguaggio naturale)
     - Goal: monitoring
-    - Data start/end
-    - Duration
+    - Data start/end, duration
+    - CropType e interfilare (informazioni che prendo da AgriParcel, cioè quando registro il task specifico la parcel in cui è avvenuto)
+    - Location (traiettoria linestring Geojson)
     - How many cameras/video streams
 - *Device*
     - Cameras (there is a specific entity [Camera](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml))
