@@ -634,20 +634,23 @@
 <li>Step 2: (POLIMI) Upload ROS bag and <code>metadata.yaml</code> files using FTP/SCP after every mission</li>
 <li>Step 3: (UniBO) visualization of such data in a georeferenced map</li>
 <li>Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)</li>
-<li>Step 5: (POLIMI) moving the processing to the platfrom using docker</li>
+<li>Step 5: (POLIMI) moving the processing to the platform using docker</li>
 </ul>
 </section>
 
 <section id="data-models-unibo" class="title-slide slide level1 center">
 <h1>Data models (UniBO)</h1>
 <ul>
-<li><em>AgriFarm</em>: mapping Cadriano</li>
+<li>Meteo potrebbe servire per post-processing</li>
+<li><em>AgriFarm</em>: mapping Cadriano. Sentire con contatti (~fine Maggio) per avere rilevazioni GPS puntuali e fare mappatura.</li>
 <li><em>Single tree</em>: completely missing in terms of data models. Do we need entities or is it a simple measurement?</li>
 <li><em>Task</em>: useful information from <code>metadata.yaml</code>
 <ul>
+<li>Name/Description (linguaggio naturale)</li>
 <li>Goal: monitoring</li>
-<li>Data start/end</li>
-<li>Duration</li>
+<li>Data start/end, duration</li>
+<li>CropType e interfilare (informazioni che prendo da AgriParcel, cioè quando registro il task specifico la parcel in cui è avvenuto)</li>
+<li>Location (traiettoria linestring Geojson)</li>
 <li>How many cameras/video streams</li>
 </ul></li>
 <li><em>Device</em>
