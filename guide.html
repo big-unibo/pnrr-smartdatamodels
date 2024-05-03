@@ -605,6 +605,43 @@
 <span id="cb5-22"><a href=""></a>    <span class="st">"soilTextureType"</span><span class="op">:</span> <span class="st">"Clay"</span><span class="op">,</span></span>
 <span id="cb5-23"><a href=""></a>    <span class="st">"irrigationSystemType"</span><span class="op">:</span> <span class="st">"Drip irrigation"</span></span>
 <span id="cb5-24"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
+<section id="the-location-attribute" class="title-slide slide level1 center">
+<h1>The <code>location</code> attribute</h1>
+<p>Georeferenced entities <em>must have</em> the <code>location</code> attribute</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href=""></a><span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb6-2"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
+<span id="cb6-3"><a href=""></a>    <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>]</span>
+<span id="cb6-4"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In FIWARE,</p>
+<ul>
+<li>locations are represented using the <a href="https://datatracker.ietf.org/doc/html/rfc7946">GeoJSON standard (RFC 7946)</a>, check <a href="https://geojson.io/#map=2/0/20">here</a> to create valid geometriesJSON</li>
+<li>locations must be represented using the standard WGS84 <a href="https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset">EPSG:4326</a> (2D coordinate reference system (CRS))
+<ul>
+<li>the one used by Google</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="the-id-type-and-name-attributes" class="title-slide slide level1 center">
+<h1>The <code>id</code>, <code>type</code>, and <code>name</code> attributes</h1>
+<ul>
+<li><code>type</code>: must be equal to the used smart data model</li>
+<li><code>id</code>: must come with the pattern <code>urn:ngsi-ld:&lt;type&gt;:&lt;uuid&gt;</code>
+<ul>
+<li><code>&lt;type&gt;</code> same as above</li>
+<li><code>&lt;uuid&gt;</code> check <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation">here</a> to get a universal identifier</li>
+</ul></li>
+<li><code>name</code>: user-friendly name of the entity</li>
+</ul>
+<p>Example</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb7-1"><a href=""></a>{</span>
+<span id="cb7-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Camera:9ea60389-9246-4dda-a083-3e3bcb444131"</span><span class="op">,</span></span>
+<span id="cb7-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Camera"</span><span class="op">,</span></span>
+<span id="cb7-4"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"Front Camera RGB"</span><span class="op">,</span></span>
+<span id="cb7-5"><a href=""></a>    <span class="op">...</span></span>
+<span id="cb7-6"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Spoke 3 - University of Bologna</p>
