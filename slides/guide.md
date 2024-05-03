@@ -202,3 +202,39 @@ A Data Model for camera installations in a city.
     "irrigationSystemType": "Drip irrigation"
 }
 ```
+
+# The `location` attribute
+
+Georeferenced entities *must have* the `location` attribute
+
+```js
+"location": {
+    "type": "Point",
+    "coordinates": [-3.48043, 40.31308]
+}
+```
+
+In FIWARE,
+
+- locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946), check [here](https://geojson.io/#map=2/0/20) to create valid geometriesJSON
+- locations must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
+    - the one used by Google
+
+# The `id`, `type`, and `name` attributes
+
+- `type`: must be equal to the used smart data model
+- `id`: must come with the pattern `urn:ngsi-ld:<type>:<uuid>`
+    - `<type>` same as above
+    - `<uuid>` check [here](https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation) to get a universal identifier
+- `name`: user-friendly name of the entity
+
+Example 
+
+```js
+{
+    "id": "urn:ngsi-ld:Camera:9ea60389-9246-4dda-a083-3e3bcb444131",
+    "type": "Camera",
+    "name": "Front Camera RGB",
+    ...
+}
+```

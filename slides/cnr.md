@@ -12,7 +12,8 @@ Goal analisi
 
 Collezione dati:
 
-- Immagini (RGB, multispettrali, LIDAR) raccolte con droni su varie colture (pomodoro, grano)
+- Immagini (RGB, multispettrali, LIDAR) raccolte con droni su varie colture (pomodoro, grano) da 5/15m di altezza (40/60GB ogni volta)
+    - 100 foto equidistanti, costruiscono ortoimmagine da cui si ricavano griglie di immagini (5x5m, 10x10m)
 - Fogli Excel (pochi MB) con punti campionamento in castagneto
 - Dati meteo e satellitari (utili da acquisire) in Italia (grano in ER, pomodoro in Puglia)
 
