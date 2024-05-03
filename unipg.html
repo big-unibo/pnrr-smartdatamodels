@@ -689,34 +689,6 @@
 <li>Step 5 (nice to have): Upload raw data on platform (UniPG + UniBo)</li>
 <li>Step 6 (nice to have): Deploy docker processing containers on platform (UniPG + UniBo)</li>
 </ul>
-</section>
-
-<section id="data-models-unibo" class="title-slide slide level1 center">
-<h1>Data models (UniBO)</h1>
-<ul>
-<li>Meteo potrebbe servire per post-processing</li>
-<li><em>AgriFarm</em>: mapping Cadriano. Sentire con contatti (~fine Maggio) per avere rilevazioni GPS puntuali e fare mappatura.</li>
-<li><em>Single tree</em>: completely missing in terms of data models. Do we need entities or is it a simple measurement?</li>
-<li><em>Task</em>: useful information from <code>metadata.yaml</code>
-<ul>
-<li>Name/Description (linguaggio naturale)</li>
-<li>Goal: monitoring</li>
-<li>Data start/end, duration</li>
-<li>CropType e interfilare (informazioni che prendo da AgriParcel, cioè quando registro il task specifico la parcel in cui è avvenuto)</li>
-<li>Location (traiettoria linestring Geojson)</li>
-<li>How many cameras/video streams</li>
-</ul></li>
-<li><em>Device</em>
-<ul>
-<li>Cameras (there is a specific entity <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml">Camera</a>)
-<ul>
-<li>How many FPS</li>
-<li>How many images per camera</li>
-<li>Positioning with respect to the center of mass of the robot</li>
-</ul></li>
-<li>Simple (camera) vs composite (robot) device</li>
-</ul></li>
-</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
