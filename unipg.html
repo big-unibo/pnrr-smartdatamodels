@@ -609,32 +609,25 @@
 
 <section id="unipg-2024-05-03" class="title-slide slide level1 center">
 <h1>UniPG (2024-05-03)</h1>
-<p>Contesto: ricerca su vigneto località Cadriano.</p>
+<p>Contesto:</p>
 <p>Collezione dati:</p>
 <ul>
-<li>Raccolta di video multispettrali tramite diverse tipologie di telecamere (e.g.&nbsp;RGB, LIDAR Ouster OS0) posizionate su robot su 4 colture</li>
-<li>Ogni raccolta dati è di ~100GB​. 2 volte/mese​. 200 GB/mese​. 200GB * 8 mesi = 1.6TB​</li>
-<li>Bag ROS2 (5 telecamere). FILE ~100GB (check di FTP su performance, scp/rsync)​
-<ul>
-<li>Point cloud (lista 65K punti x, y, z). LIDAR margine di errore in mm​</li>
-<li><code>metadata.yaml</code>: fornisce info sulla ROS bag</li>
-<li>Immagini 2D (identificazione di frutti, proietto immagine in point cloud)​</li>
-</ul></li>
+<li></li>
 </ul>
 <p>Goal analisi</p>
 <ul>
-<li>Riconoscere (e.g.&nbsp;clustering) ed estrarre informazioni sulle singole piante: contare fiori/frutti, stato di salute, livelli di azoto, etc. con l’obbiettivo di suggerire trattamenti (pesticidi, fertilizzanti, etc.)</li>
+<li></li>
 </ul>
 </section>
 
-<section id="integration-steps-unibo-polimi" class="title-slide slide level1 center">
-<h1>Integration steps (UniBO + POLIMI)</h1>
+<section id="integration-steps-unibo-unipg" class="title-slide slide level1 center">
+<h1>Integration steps (UniBO + UniPG)</h1>
 <ul>
-<li>Step 1: (UniBO) Mapping Cadriano</li>
-<li>Step 2: (POLIMI) Upload ROS bag and <code>metadata.yaml</code> files using FTP/SCP after every mission</li>
-<li>Step 3: (UniBO) visualization of such data in a georeferenced map</li>
-<li>Step 4: (POLIMI) upload the synthetic/processed data from bags (computed outside the platform)</li>
-<li>Step 5: (POLIMI) moving the processing to the platform using docker</li>
+<li>Step 1:</li>
+<li>Step 2:</li>
+<li>Step 3:</li>
+<li>Step 4:</li>
+<li>Step 5:</li>
 </ul>
 </section>
 
