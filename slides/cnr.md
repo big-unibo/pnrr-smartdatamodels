@@ -33,4 +33,5 @@ Tecnologie:
 
 # Data models (UniBO)
 
-- ...
+- AgriParcel
+- Camera
