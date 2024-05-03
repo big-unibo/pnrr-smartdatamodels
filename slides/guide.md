@@ -241,5 +241,5 @@ Example
 
 # The `timestamp` and `date` attributes
 
-- Must be set using [UNIX timestamp (in seconds)](https://www.unixtimestamp.com/) (e.g., 1714734840)
-- Date must be formatted according to the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) (e.g., "2024-05-03T11:14:00Z")
+- `timestamp` must be set using [UNIX timestamp (in seconds)](https://www.unixtimestamp.com/) (e.g., 1714734840)
+- `date*` must be formatted according to the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) (e.g., "2024-05-03T11:14:00Z")
