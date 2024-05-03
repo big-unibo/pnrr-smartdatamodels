@@ -216,7 +216,7 @@ Georeferenced entities *must have* the `location` attribute
 
 In FIWARE,
 
-- locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946), check [here](https://geojson.io/#map=2/0/20) to create valid geometriesJSON
+- locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946) (Point, LineString, Polygon), check [here](https://geojson.io/#map=2/0/20) to create valid geometriesJSON
 - locations must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
     - the one used by Google
 
