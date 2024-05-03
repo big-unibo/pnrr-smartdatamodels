@@ -609,25 +609,40 @@
 
 <section id="unipg-2024-05-03" class="title-slide slide level1 center">
 <h1>UniPG (2024-05-03)</h1>
-<p>Contesto:</p>
+<p>Contesto: Misurazioni su coltivazioni erbacee.</p>
 <p>Collezione dati:</p>
 <ul>
-<li></li>
+<li>Diverse tipologie di sonde puntuali;</li>
+<li>Misurazioni distruttive;</li>
+<li>Immagini/Video (as of deliverable)</li>
+</ul>
+<p>Collezione as of now:</p>
+<ul>
+<li>Excel con misurazioni storiche fatte in campo (o in post-processing).</li>
+<li>Poche tuple (qualche migliaio)</li>
+<li>Nice to have (non utilizzati al momento): dati satellitari</li>
+<li>NO georeferenziazione (di default)</li>
+</ul>
+<p>Sensori:</p>
+<ul>
+<li>Puntuali</li>
+<li>Camere (su UAV) e.g.&nbsp;infrared, multispectral (as of deliverable)</li>
 </ul>
 <p>Goal analisi</p>
 <ul>
-<li></li>
+<li>Machine learning / addestramento modelli per suggerire trattamenti e/o irrigazioni.</li>
+<li>No output formale al momento, solo discussioni con parte agro</li>
 </ul>
 </section>
 
 <section id="integration-steps-unibo-unipg" class="title-slide slide level1 center">
 <h1>Integration steps (UniBO + UniPG)</h1>
 <ul>
-<li>Step 1:</li>
-<li>Step 2:</li>
-<li>Step 3:</li>
-<li>Step 4:</li>
-<li>Step 5:</li>
+<li>Step 1: Determine which data to upload + georeferencing data (UniPG)</li>
+<li>Step 2: Determine which Smart Data Model fit the needs and the needed mappings (meeting UniBo + UniPG)</li>
+<li>Step 3: Upload historical processed data (structured) into platform (UniPG)</li>
+<li>Step 5 (nice to have): Upload raw data on platform (UniPG + UniBo)</li>
+<li>Step 6 (nice to have): Deploy docker processing containers on platform (UniPG + UniBo)</li>
 </ul>
 </section>
 
