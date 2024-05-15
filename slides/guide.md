@@ -47,10 +47,15 @@ Data collection comes with 2 (main) interfaces: SFTP and FIWARE
 - *SFTP* (File Transfer Protocol through SSH) is a network protocol for transmitting files between computers over SSH connections
 - *FIWARE* open source enabler for data collection
 
-Integrating with SFTP is "easy"
+# SFTP
+
+Integrating with SFTP is easy
 
 - We give you user/password
 - You upload files into the platform
+  - E.g., using Filezilla
+    - URL: sftp://<IP>
+    - Port: 40021
 - Uploaded files are accessible only by its proprietary user
 
 # FIWARE
