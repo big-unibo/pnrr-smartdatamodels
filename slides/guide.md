@@ -57,6 +57,7 @@ Integrating with SFTP is easy
     - URL: `sftp://<IP>`
     - Port: `40021`
 - Uploaded files are accessible only by its proprietary user
+- Can only write data to the `data/` folder
 
 # FIWARE
 
