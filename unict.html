@@ -440,17 +440,22 @@
 
 <section id="data-collection" class="title-slide slide level1 center">
 <h1>Data collection</h1>
-<p>Data collection comes with 2 (main) interfaces: FTP and FIWARE</p>
-<ul>
-<li><em>FTP</em> (File Transfer Protocol) is a network protocol for transmitting files between computers over TCP/IP connections</li>
-<li><em>FIWARE</em> open source enabler for data collection</li>
-</ul>
 <p>Collection of two main data types:</p>
 <ul>
-<li>Black box (images, videos) as files through FTP</li>
-<li>White box (JSON documents) as files through FTP or to FIWARE through HTTP requests</li>
+<li>Black box (images, videos) as files through SFTP</li>
+<li>White box (JSON documents) as files through SFTP or to FIWARE through HTTP requests</li>
 </ul>
-<p>Integrating with FTP is “easy”: given user/password, upload files into the platform</p>
+<p>Data collection comes with 2 (main) interfaces: SFTP and FIWARE</p>
+<ul>
+<li><em>SFTP</em> (File Transfer Protocol through SSH) is a network protocol for transmitting files between computers over SSH connections</li>
+<li><em>FIWARE</em> open source enabler for data collection</li>
+</ul>
+<p>Integrating with SFTP is “easy”</p>
+<ul>
+<li>We give you user/password</li>
+<li>You upload files into the platform</li>
+<li>Uploaded files are accessible only by its proprietary user</li>
+</ul>
 </section>
 
 <section id="fiware" class="title-slide slide level1 center">
@@ -472,7 +477,7 @@
 
 <section id="smart-data-models" class="title-slide slide level1 center">
 <h1>Smart data models</h1>
-<p>Either we use FTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models</p>
+<p>Either we use SFTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models</p>
 <p>What is the <strong>Smart Data Models Initiative</strong>?</p>
 <ul>
 <li>Joint collaboration to <em>support the adoption of a reference architecture and compatible common data models</em> that underpin interoperable and replicable solutions in multiple sectors</li>
@@ -560,8 +565,8 @@
 <span id="cb3-25"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 
-<section id="example-agrifarm-and-agriparcel-agrifood-domain" class="title-slide slide level1 center">
-<h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml">AgriFarm</a> and <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml">AgriParcel</a> (<a href="https://github.com/smart-data-models/dataModel.Agrifood">AgriFood</a> domain)</h1>
+<section id="example-agrifarm-agrifood-domain" class="title-slide slide level1 center">
+<h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml">AgriFarm</a> (<a href="https://github.com/smart-data-models/dataModel.Agrifood">AgriFood</a> domain)</h1>
 <p><strong>AgriFarm</strong>: a generic farm made up of buildings and parcels</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href=""></a>{</span>
 <span id="cb4-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriFarm:001"</span><span class="op">,</span></span>
@@ -580,6 +585,10 @@
 <span id="cb4-15"><a href=""></a>    ]</span>
 <span id="cb4-16"><a href=""></a>    <span class="st">"hasBuilding"</span><span class="op">:</span> [ <span class="op">...</span> ]<span class="op">,</span></span>
 <span id="cb4-17"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+
+<section id="example-agriparcel-agrifood-domain" class="title-slide slide level1 center">
+<h1>Example: <a href="https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml">AgriParcel</a> (<a href="https://github.com/smart-data-models/dataModel.Agrifood">AgriFood</a> domain)</h1>
 <p><strong>AgriParcel</strong>: a generic parcel of land</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href=""></a>{</span>
 <span id="cb5-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:AgriParcel:001"</span><span class="op">,</span></span>
@@ -616,10 +625,10 @@
 <span id="cb6-4"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In FIWARE,</p>
 <ul>
-<li>locations are represented using the <a href="https://datatracker.ietf.org/doc/html/rfc7946">GeoJSON standard (RFC 7946)</a> (Point, LineString, Polygon), check <a href="https://geojson.io/#map=2/0/20">here</a> to create valid geometriesJSON</li>
-<li>locations must be represented using the standard WGS84 <a href="https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset">EPSG:4326</a> (2D coordinate reference system (CRS))
+<li>Locations are represented using the <a href="https://datatracker.ietf.org/doc/html/rfc7946">GeoJSON standard (RFC 7946)</a> (Point, LineString, Polygon), check <a href="https://geojson.io/#map=2/0/20">here</a> to create valid GeoJSON geometries</li>
+<li>Coordinates must be represented using the standard WGS84 <a href="https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset">EPSG:4326</a> (2D coordinate reference system (CRS))
 <ul>
-<li>the one used by Google</li>
+<li>The one used by Google</li>
 </ul></li>
 </ul>
 </section>
