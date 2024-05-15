@@ -54,8 +54,8 @@ Integrating with SFTP is easy
 - We give you user/password
 - You upload files into the platform
   - E.g., using Filezilla
-    - URL: sftp://<IP>
-    - Port: 40021
+    - URL: `sftp://<IP>`
+    - Port: `40021`
 - Uploaded files are accessible only by its proprietary user
 
 # FIWARE
