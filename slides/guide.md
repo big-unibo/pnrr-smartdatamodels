@@ -214,6 +214,19 @@ A Data Model for camera installations in a city.
 }
 ```
 
+# Example: the WeLASER case study
+
+::::{.columns}
+
+:::
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qw38K0GwPTc?si=pXr4UM3CqZ3oSmtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+
+:::
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zyl3KP8lHD4?si=HEFz_UmhqMnQGsSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+
+::::
 # The `location` attribute
 
 Georeferenced entities *must have* the `location` attribute
