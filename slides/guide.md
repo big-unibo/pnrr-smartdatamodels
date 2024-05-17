@@ -37,17 +37,27 @@ Data processes​
 
 # Data collection
 
-Data collection comes with 2 (main) interfaces: FTP and FIWARE
-
-- *FTP* (File Transfer Protocol) is a network protocol for transmitting files between computers over TCP/IP connections
-- *FIWARE* open source enabler for data collection
-
 Collection of two main data types:
 
-- Black box (images, videos) as files through FTP 
-- White box (JSON documents) as files through FTP or to FIWARE through HTTP requests
+- Black box (images, videos) as files through SFTP 
+- White box (JSON documents) as files through SFTP or to FIWARE through HTTP requests
 
-Integrating with FTP is "easy": given user/password, upload files into the platform
+Data collection comes with 2 (main) interfaces: SFTP and FIWARE
+
+- *SFTP* (File Transfer Protocol through SSH) is a network protocol for transmitting files between computers over SSH connections
+- *FIWARE* open source enabler for data collection
+
+# SFTP
+
+Integrating with SFTP is easy
+
+- We give you user/password
+- You upload files into the platform
+  - E.g., using Filezilla
+    - URL: `sftp://<IP>`
+    - Port: `40021`
+- Uploaded files are accessible only by its proprietary user
+- Can only write data to the `data/` folder
 
 # FIWARE
 
@@ -67,8 +77,7 @@ FIWARE offers APIs to upload/get/update the data.
 
 # Smart data models
 
-Either we use FTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models
-
+Either we use SFTP or FIWARE, for intelligible documents we need to define a shared vocabulary and format, preferably FIWARE Smart Data Models
 
 What is the **Smart Data Models Initiative**?
 
@@ -150,7 +159,7 @@ A Data Model for camera installations in a city.
 }
 ```
 
-# Example: [AgriFarm](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml) and [AgriParcel](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)
+# Example: [AgriFarm](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriFarm/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)
 
 **AgriFarm**: a generic farm made up of buildings and parcels
 
@@ -173,6 +182,8 @@ A Data Model for camera installations in a city.
     "hasBuilding": [ ... ],
 }
 ```
+
+# Example: [AgriParcel](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Agrifood/AgriParcel/swagger.yaml) ([AgriFood](https://github.com/smart-data-models/dataModel.Agrifood) domain)
 
 **AgriParcel**: a generic parcel of land
 
@@ -203,6 +214,19 @@ A Data Model for camera installations in a city.
 }
 ```
 
+# Example: the WeLASER case study
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qw38K0GwPTc?si=pXr4UM3CqZ3oSmtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+
+::: {.column width="50%"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zyl3KP8lHD4?si=HEFz_UmhqMnQGsSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+
+::::
 # The `location` attribute
 
 Georeferenced entities *must have* the `location` attribute
@@ -216,9 +240,9 @@ Georeferenced entities *must have* the `location` attribute
 
 In FIWARE,
 
-- locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946) (Point, LineString, Polygon), check [here](https://geojson.io/#map=2/0/20) to create valid geometriesJSON
-- locations must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
-    - the one used by Google
+- Locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946) (Point, LineString, Polygon), check [here](https://geojson.io/#map=2/0/20) to create valid GeoJSON geometries
+- Coordinates must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
+    - The one used by Google
 
 # The `id`, `type`, and `name` attributes
 
