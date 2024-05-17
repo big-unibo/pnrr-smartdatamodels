@@ -688,24 +688,44 @@
 
 <section id="unipr-2024-05-17" class="title-slide slide level1 center">
 <h1>UniPR (2024-05-17)</h1>
-<p>Contesto: ??</p>
-<p>Goal analisi: ??</p>
+<p>Contesto: raccolta dati sensoriali in open field.</p>
+<p>Goal analisi:</p>
+<ul>
+<li>Indicatori agronomici (e.g., GDD per pomodoro e luppolo)</li>
+<li>Controllo irrigazione</li>
+</ul>
 <p>Collezione dati:</p>
 <ul>
-<li>???</li>
+<li>Campo aperto su pomodoro e luppolo. Qualcosa anche in serra.</li>
+<li>Sensori statici, georeferenziati nel momento dell’installazione
+<ul>
+<li>Water meter ogni 10 minuti. Valore in byte?</li>
+<li>Milesight</li>
+<li>Sensori aggregati/composti</li>
+<li>I payload JSON sono vostri, bisogna allinerli a FIWARE</li>
+</ul></li>
+<li>Unificare i nomi (alcuni “temp”, altri “temperature”)</li>
+<li>Attuatori
+<ul>
+<li>Valvole</li>
+</ul></li>
+<li>Connettore verso FIWARE</li>
+<li>API: dati meteo e dato storico</li>
 </ul>
 </section>
 
 <section id="integration-steps-unibo-polimi" class="title-slide slide level1 center">
 <h1>Integration steps (UniBO + POLIMI)</h1>
 <ul>
-<li>Step 1: (UniBO) ???</li>
+<li>Step 1: (UniPR) avere un’esempio di entity per tipo</li>
 </ul>
 </section>
 
 <section id="data-models-unibo" class="title-slide slide level1 center">
 <h1>Data models (UniBO)</h1>
-<p>???</p>
+<ul>
+<li><a href="https://fiware-datamodels.readthedocs.io/en/stable/Environment/WaterQualityObserved/doc/spec/index.html">WaterMeter (lorawan)</a></li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
