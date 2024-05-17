@@ -2,18 +2,31 @@
 
 # UniPR (2024-05-17)
 
-Contesto: ??
+Contesto: raccolta dati sensoriali in open field.
 
-Goal analisi: ??
+Goal analisi: 
+
+- Indicatori agronomici (e.g., GDD per pomodoro e luppolo)
+- Controllo irrigazione
 
 Collezione dati:
 
-- ??? 
+- Campo aperto su pomodoro e luppolo. Qualcosa anche in serra.
+- Sensori statici, georeferenziati nel momento dell'installazione
+    - Water meter ogni 10 minuti. Valore in byte?
+    - Milesight
+    - Sensori aggregati/composti
+    - I payload JSON sono vostri, bisogna allinerli a FIWARE
+- Unificare i nomi (alcuni "temp", altri "temperature")
+- Attuatori
+    - Valvole
+- Connettore verso FIWARE
+- API: dati meteo e dato storico
 
 # Integration steps (UniBO + POLIMI)
 
-- Step 1: (UniBO) ???
+- Step 1: (UniPR) avere un'esempio di entity per tipo
 
 # Data models (UniBO)
 
-???
+- [WaterMeter (lorawan)](https://fiware-datamodels.readthedocs.io/en/stable/Environment/WaterQualityObserved/doc/spec/index.html)
