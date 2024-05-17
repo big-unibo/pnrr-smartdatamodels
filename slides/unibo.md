@@ -8,4 +8,4 @@
     - Software
     - Condivisione dati
 - Iperparametri/algoritmi
-- Measurement derivati
+- Tracciamento measurement derivati
