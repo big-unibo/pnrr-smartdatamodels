@@ -18,8 +18,7 @@ Collezione dati:
     - Sensori aggregati/composti
     - I payload JSON sono vostri, bisogna allinerli a FIWARE
 - Unificare i nomi (alcuni "temp", altri "temperature")
-- Attuatori
-    - Valvole
+- Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
 - API: dati meteo e dato storico
 
