@@ -17,7 +17,7 @@ Collezione dati:
     - Milesight
     - Sensori aggregati/composti
 - Allineare i payload a FIWARE
-- Unificare i nomi (alcuni "temp", altri "temperature")
+- Unificare i nomi (alcuni `temp`, altri `temperature`)
 - Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
 - API (UniBO) di interesse: dati meteo e dato storico
