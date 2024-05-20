@@ -20,11 +20,11 @@ Collezione dati:
 - Unificare i nomi (alcuni `temp`, altri `temperature`)
 - Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
-- API (UniBO) di interesse: dati meteo e dato storico
 
 # Integration steps (UniBO + UniPR)
 
 - Step 1: (UniPR) avere un'esempio di entity per tipo
+- Step 2: (UniBO) predisporre API per dati meteo, dato storico, dati satellitari
 
 # Data models (UniBO)
 
