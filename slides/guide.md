@@ -127,6 +127,8 @@ An apparatus (hardware + software + firmware) intended to accomplish a particula
 }
 ```
 
+Può modellare misure diverse, dove possibile usare le `controlledProperty` di entity `Device`
+
 # Example: [Camera](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Device/Camera/swagger.yaml)
 
 A Data Model for camera installations in a city.

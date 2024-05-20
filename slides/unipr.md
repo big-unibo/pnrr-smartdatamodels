@@ -17,7 +17,7 @@ Collezione dati:
     - Milesight
     - Sensori aggregati/composti
 - Allineare i payload a FIWARE
-- Unificare i nomi (alcuni `temp`, altri `temperature`)
+- Unificare i nomi (alcuni `temp`, altri `temperature`), dove possibile usare le `controlledProperty` di entity `Device`
 - Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
 
