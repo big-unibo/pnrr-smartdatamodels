@@ -16,13 +16,13 @@ Collezione dati:
     - Water meter ogni 10 minuti. Valore in byte?
     - Milesight
     - Sensori aggregati/composti
-    - I payload JSON sono vostri, bisogna allinerli a FIWARE
+- Allineare i payload a FIWARE
 - Unificare i nomi (alcuni "temp", altri "temperature")
 - Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
-- API: dati meteo e dato storico
+- API (UniBO) di interesse: dati meteo e dato storico
 
-# Integration steps (UniBO + POLIMI)
+# Integration steps (UniBO + UniPR)
 
 - Step 1: (UniPR) avere un'esempio di entity per tipo
 
