@@ -14,13 +14,11 @@ Esempio di creazione device
     "type": "Device",
     "name": "...",
     "controlledProperty": ["SAP"],
-    "value": [21.2],
     "dateInstalled": "2024-05-03T11:14:00Z",
-    "dateObserved": "2024-05-03T11:14:00Z",
     "location": {
         "type": "Point",
         "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
-    }
+    }, // ...
 }
 ```
 
@@ -29,11 +27,9 @@ Esempio di creazione device meteo
 ```js
 {
     "id": "urn:ngsi-ld:Device:unipg:1234A",
-    "name": "...",
     "type": "Device",
     "controlledProperty": ["humidity", "windSpeed", "temperature"],
-    "value": [0.22, "nan", 21.2],
-    ...
+    // "value": [0.22, "nan", 21.2], ...
 }
 ```
 
