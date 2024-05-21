@@ -63,8 +63,9 @@ Integrating with SFTP is easy
 
 FIWARE offers APIs to upload/get/update the data.
 
-- Examples of APIs are available [here](https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03) 
-- Example of request
+- CRUD HTTP APIs are available [here](https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03) 
+- [These characters](https://fiware-orion.readthedocs.io/en/2.4.0/user/forbidden_characters/) are not admissible in the payload
+- Example of HTTP request
 
         curl --location 'http://localhost:1026/v2/entities/' \​
              --header 'Content-Type: application/json' \​
@@ -249,8 +250,9 @@ In FIWARE,
 # The `id`, `type`, and `name` attributes
 
 - `type`: must be equal to the used smart data model
-- `id`: must come with the pattern `urn:ngsi-ld:<type>:<uuid>`
-    - `<type>` same as above
+- `id`: must come with the pattern `urn:ngsi-ld:<type>:<partner>:<uuid>`
+    - `<partner>`: (`polimi`, `unipg`, ...)
+    - `<type>`: entity type (e.g., `Device`)
     - `<uuid>` check [here](https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation) to get a universal identifier
 - `name`: user-friendly name of the entity
 
