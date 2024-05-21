@@ -6,7 +6,7 @@
 - Device: Meteo, Coltivazione (device distinti)
 - Immagini: Camera (in standby)
 
-## Esempio di creazione device
+Esempio di creazione device
 
 ```js
 {
