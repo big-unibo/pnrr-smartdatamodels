@@ -474,8 +474,9 @@
 <h1>FIWARE</h1>
 <p>FIWARE offers APIs to upload/get/update the data.</p>
 <ul>
-<li><p>Examples of APIs are available <a href="https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03">here</a></p></li>
-<li><p>Example of request</p>
+<li><p>CRUD HTTP APIs are available <a href="https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03">here</a></p></li>
+<li><p><a href="https://fiware-orion.readthedocs.io/en/2.4.0/user/forbidden_characters/">These characters</a> are not admissible in the payload</p></li>
+<li><p>Example of HTTP request</p>
 <pre><code>  curl --location 'http://localhost:1026/v2/entities/' \​
        --header 'Content-Type: application/json' \​
        --data ' {​
@@ -663,9 +664,10 @@
 <h1>The <code>id</code>, <code>type</code>, and <code>name</code> attributes</h1>
 <ul>
 <li><code>type</code>: must be equal to the used smart data model</li>
-<li><code>id</code>: must come with the pattern <code>urn:ngsi-ld:&lt;type&gt;:&lt;uuid&gt;</code>
+<li><code>id</code>: must come with the pattern <code>urn:ngsi-ld:&lt;type&gt;:&lt;partner&gt;:&lt;uuid&gt;</code>
 <ul>
-<li><code>&lt;type&gt;</code> same as above</li>
+<li><code>&lt;partner&gt;</code>: (<code>polimi</code>, <code>unipg</code>, …)</li>
+<li><code>&lt;type&gt;</code>: entity type (e.g., <code>Device</code>)</li>
 <li><code>&lt;uuid&gt;</code> check <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation">here</a> to get a universal identifier</li>
 </ul></li>
 <li><code>name</code>: user-friendly name of the entity</li>
@@ -687,8 +689,50 @@
 </ul>
 </section>
 
-<section id="unipg-2024-05-03" class="title-slide slide level1 center">
-<h1>UniPG (2024-05-03)</h1>
+<section>
+<section id="incontro-2024-05-20" class="title-slide slide level1 center">
+<h1>Incontro 2024-05-20</h1>
+<ul>
+<li>Particelle: AgriParcel</li>
+<li>Device: Meteo, Coltivazione (due device distinti)</li>
+<li>Immagini: Camera (in standby)</li>
+</ul>
+</section>
+<section id="esempio-di-creazione-device" class="slide level2">
+<h2>Esempio di creazione device</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a href=""></a>{</span>
+<span id="cb8-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"device-001"</span><span class="op">,</span></span>
+<span id="cb8-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
+<span id="cb8-4"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
+<span id="cb8-5"><a href=""></a>    <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"SAP"</span>]<span class="op">,</span></span>
+<span id="cb8-6"><a href=""></a>    <span class="st">"value"</span><span class="op">:</span> [<span class="fl">21.2</span>]<span class="op">,</span></span>
+<span id="cb8-7"><a href=""></a>    <span class="st">"dateCreated"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
+<span id="cb8-8"><a href=""></a>    <span class="st">"dateUpdated"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
+<span id="cb8-9"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb8-10"><a href=""></a>        <span class="co">// GeoJSON location. Da impostare solo in fase di creazione se sensore è statico</span></span>
+<span id="cb8-11"><a href=""></a>    }</span>
+<span id="cb8-12"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Esempio di creazione device meteo</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a href=""></a>{</span>
+<span id="cb9-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"device-9845A"</span><span class="op">,</span></span>
+<span id="cb9-3"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
+<span id="cb9-4"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
+<span id="cb9-5"><a href=""></a>    <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"humidity"</span><span class="op">,</span> <span class="st">"windSpeed"</span><span class="op">,</span> <span class="st">"temperature"</span>]<span class="op">,</span></span>
+<span id="cb9-6"><a href=""></a>    <span class="st">"value"</span><span class="op">:</span> [<span class="fl">0.22</span><span class="op">,</span> <span class="st">"nan"</span><span class="op">,</span> <span class="fl">21.2</span>]<span class="op">,</span></span>
+<span id="cb9-7"><a href=""></a>    <span class="op">...</span></span>
+<span id="cb9-8"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="esempio-di-update-rilevazione-device" class="slide level2">
+<h2>Esempio di update rilevazione device</h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a href=""></a>{</span>
+<span id="cb10-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"device-001"</span><span class="op">,</span></span>
+<span id="cb10-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
+<span id="cb10-4"><a href=""></a>    <span class="st">"value"</span><span class="op">:</span> [<span class="fl">0.22</span>]<span class="op">,</span></span>
+<span id="cb10-5"><a href=""></a>    <span class="st">"dateUpdated"</span><span class="op">:</span> <span class="st">"..."</span></span>
+<span id="cb10-6"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section id="incontro-2024-05-03" class="title-slide slide level1 center">
+<h1>Incontro 2024-05-03</h1>
 <p>Contesto: Misurazioni su coltivazioni erbacee.</p>
 <p>Collezione dati:</p>
 <ul>
@@ -719,7 +763,7 @@
 <h1>Integration steps (UniBO + UniPG)</h1>
 <ul>
 <li>Step 1: Determine which data to upload + georeferencing data (UniPG)</li>
-<li>Step 2: Determine which Smart Data Model fit the needs and the needed mappings (meeting UniBo + UniPG)</li>
+<li>Step 2: Determine which Smart Data Model fits the needs and the needed mappings (meeting UniBo + UniPG)</li>
 <li>Step 3: Upload historical processed data (structured) into platform (UniPG)</li>
 <li>Step 5 (nice to have): Upload raw data on platform (UniPG + UniBo)</li>
 <li>Step 6 (nice to have): Deploy docker processing containers on platform (UniPG + UniBo)</li>
