@@ -230,24 +230,8 @@ A Data Model for camera installations in a city.
 :::
 
 ::::
-# The `location` attribute
 
-Georeferenced entities *must have* the `location` attribute
-
-```js
-"location": {
-    "type": "Point",
-    "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
-}
-```
-
-In FIWARE,
-
-- Locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946) (Point, LineString, Polygon), check [here](https://geojson.io/#map=2/0/20) to create valid GeoJSON geometries
-- Coordinates must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
-    - The one used by Google
-
-# The `id`, `type`, and `name` attributes
+# The `id`, `type`, and `name` (mandatory) attributes
 
 - `type`: must be equal to the used smart data model
 - `id`: must come with the pattern `urn:ngsi-ld:<type>:<partner>:<uuid>`
@@ -266,6 +250,25 @@ Example
     ...
 }
 ```
+
+# The `location` attribute
+
+Georeferenced entities *must have* the `location` attribute
+
+```js
+"location": {
+    "type": "Point",
+    "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
+}
+```
+
+In FIWARE,
+
+- Locations are represented using the [GeoJSON standard (RFC 7946)](https://datatracker.ietf.org/doc/html/rfc7946) (Point, LineString, Polygon), check [here](https://geojson.io/#map=2/0/20) to create valid GeoJSON geometries
+- Coordinates must be represented using the standard WGS84 [EPSG:4326](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset) (2D coordinate reference system (CRS))
+    - The one used by Google
+- If the Device is static (it does not move), then its location is set at the device creation
+    - ... otherwise, it is updated at every measurement
 
 # The `timestamp` and `date` attributes
 
