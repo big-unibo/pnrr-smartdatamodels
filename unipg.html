@@ -702,23 +702,19 @@
 <span id="cb8-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
 <span id="cb8-4"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
 <span id="cb8-5"><a href=""></a>    <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"SAP"</span>]<span class="op">,</span></span>
-<span id="cb8-6"><a href=""></a>    <span class="st">"value"</span><span class="op">:</span> [<span class="fl">21.2</span>]<span class="op">,</span></span>
-<span id="cb8-7"><a href=""></a>    <span class="st">"dateInstalled"</span><span class="op">:</span> <span class="st">"2024-05-03T11:14:00Z"</span><span class="op">,</span></span>
-<span id="cb8-8"><a href=""></a>    <span class="st">"dateObserved"</span><span class="op">:</span> <span class="st">"2024-05-03T11:14:00Z"</span><span class="op">,</span></span>
-<span id="cb8-9"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
-<span id="cb8-10"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
-<span id="cb8-11"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>] <span class="co">// [lon, lat] this is located in Madrid</span></span>
-<span id="cb8-12"><a href=""></a>    }</span>
-<span id="cb8-13"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-6"><a href=""></a>    <span class="st">"dateInstalled"</span><span class="op">:</span> <span class="st">"2024-05-03T11:14:00Z"</span><span class="op">,</span></span>
+<span id="cb8-7"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
+<span id="cb8-8"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
+<span id="cb8-9"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>] <span class="co">// [lon, lat] this is located in Madrid</span></span>
+<span id="cb8-10"><a href=""></a>    }<span class="op">,</span> <span class="co">// ...</span></span>
+<span id="cb8-11"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Esempio di creazione device meteo</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a href=""></a>{</span>
 <span id="cb9-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Device:unipg:1234A"</span><span class="op">,</span></span>
-<span id="cb9-3"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"..."</span><span class="op">,</span></span>
-<span id="cb9-4"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
-<span id="cb9-5"><a href=""></a>    <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"humidity"</span><span class="op">,</span> <span class="st">"windSpeed"</span><span class="op">,</span> <span class="st">"temperature"</span>]<span class="op">,</span></span>
-<span id="cb9-6"><a href=""></a>    <span class="st">"value"</span><span class="op">:</span> [<span class="fl">0.22</span><span class="op">,</span> <span class="st">"nan"</span><span class="op">,</span> <span class="fl">21.2</span>]<span class="op">,</span></span>
-<span id="cb9-7"><a href=""></a>    <span class="op">...</span></span>
-<span id="cb9-8"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Device"</span><span class="op">,</span></span>
+<span id="cb9-4"><a href=""></a>    <span class="st">"controlledProperty"</span><span class="op">:</span> [<span class="st">"humidity"</span><span class="op">,</span> <span class="st">"windSpeed"</span><span class="op">,</span> <span class="st">"temperature"</span>]<span class="op">,</span></span>
+<span id="cb9-5"><a href=""></a>    <span class="co">// "value": [0.22, "nan", 21.2], ...</span></span>
+<span id="cb9-6"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Esempio di update a seguito di nuovo measurement</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb10-1"><a href=""></a>{</span>
 <span id="cb10-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Device:unipg:9845A"</span><span class="op">,</span></span>
