@@ -237,7 +237,7 @@ Georeferenced entities *must have* the `location` attribute
 ```js
 "location": {
     "type": "Point",
-    "coordinates": [-3.48043, 40.31308]
+    "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
 }
 ```
 

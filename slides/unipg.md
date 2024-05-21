@@ -18,7 +18,8 @@ Esempio di creazione device
     "dateInstalled": "2024-05-03T11:14:00Z",
     "dateObserved": "2024-05-03T11:14:00Z",
     "location": {
-        // GeoJSON location. Da impostare solo in fase di creazione se sensore è statico
+        "type": "Point",
+        "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
     }
 }
 ```
