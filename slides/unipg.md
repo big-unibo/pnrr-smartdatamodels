@@ -24,6 +24,7 @@
 ```
 
 Esempio di creazione device meteo
+
 ```js
 {
     "id": "device-9845A",
@@ -35,7 +36,7 @@ Esempio di creazione device meteo
 }
 ```
 
-## Esempio di update rilevazione device
+Esempio di update a seguito di nuovo measurement
 
 ```js
 {
