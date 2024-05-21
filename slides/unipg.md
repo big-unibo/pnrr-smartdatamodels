@@ -10,13 +10,13 @@
 
 ```js
 {
-    "id": "device-001",
+    "id": "urn:ngsi-ld:Device:unipg:9845A",
     "type": "Device",
     "name": "...",
     "controlledProperty": ["SAP"],
     "value": [21.2],
-    "dateCreated": "2024-05-03T11:14:00Z",
-    "dateUpdated": "2024-05-03T11:14:00Z",
+    "dateInstalled": "2024-05-03T11:14:00Z",
+    "dateObserved": "2024-05-03T11:14:00Z",
     "location": {
         // GeoJSON location. Da impostare solo in fase di creazione se sensore è statico
     }
@@ -27,7 +27,7 @@ Esempio di creazione device meteo
 
 ```js
 {
-    "id": "device-9845A",
+    "id": "urn:ngsi-ld:Device:unipg:1234A",
     "name": "...",
     "type": "Device",
     "controlledProperty": ["humidity", "windSpeed", "temperature"],
@@ -40,10 +40,10 @@ Esempio di update a seguito di nuovo measurement
 
 ```js
 {
-    "id": "device-001",
+    "id": "urn:ngsi-ld:Device:unipg:9845A",
     "type": "Device",
     "value": [0.22],
-    "dateUpdated": "2024-05-04T10:00:00Z"
+    "dateObserved": "2024-05-04T10:00:00Z"
 }
 ```
 
