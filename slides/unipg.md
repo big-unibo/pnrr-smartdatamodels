@@ -3,7 +3,7 @@
 # Incontro 2024-05-20
 
 - Particelle: AgriParcel
-- Device: Meteo, Coltivazione (due device distinti)
+- Device: Meteo, Coltivazione (device distinti)
 - Immagini: Camera (in standby)
 
 ## Esempio di creazione device
