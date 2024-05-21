@@ -15,8 +15,8 @@
     "name": "...",
     "controlledProperty": ["SAP"],
     "value": [21.2],
-    "dateCreated": "...",
-    "dateUpdated": "...",
+    "dateCreated": "2024-05-03T11:14:00Z",
+    "dateUpdated": "2024-05-03T11:14:00Z",
     "location": {
         // GeoJSON location. Da impostare solo in fase di creazione se sensore è statico
     }
@@ -43,7 +43,7 @@ Esempio di update a seguito di nuovo measurement
     "id": "device-001",
     "type": "Device",
     "value": [0.22],
-    "dateUpdated": "..."
+    "dateUpdated": "2024-05-04T10:00:00Z"
 }
 ```
 
