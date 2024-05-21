@@ -236,7 +236,7 @@ A Data Model for camera installations in a city.
 - `type`: must be equal to the used smart data model
 - `id`: must come with the pattern `urn:ngsi-ld:<type>:<partner>:<uuid>`
     - `<type>`: entity type (e.g., `Device`, `AgriParcel`)
-    - `<partner>`: (`polimi`, `unipg`, ...)
+    - `<partner>`: name of the partner (e.g., `polimi`, `unipg`, ...)
     - `<uuid>` check [here](https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation) to get a universal identifier
 - `name`: user-friendly name of the entity
 
