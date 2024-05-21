@@ -648,7 +648,7 @@
 <p>Georeferenced entities <em>must have</em> the <code>location</code> attribute</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href=""></a><span class="st">"location"</span><span class="op">:</span> {</span>
 <span id="cb6-2"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
-<span id="cb6-3"><a href=""></a>    <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>]</span>
+<span id="cb6-3"><a href=""></a>    <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>] <span class="co">// [lon, lat] this is located in Madrid</span></span>
 <span id="cb6-4"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In FIWARE,</p>
 <ul>
@@ -706,9 +706,10 @@
 <span id="cb8-7"><a href=""></a>    <span class="st">"dateInstalled"</span><span class="op">:</span> <span class="st">"2024-05-03T11:14:00Z"</span><span class="op">,</span></span>
 <span id="cb8-8"><a href=""></a>    <span class="st">"dateObserved"</span><span class="op">:</span> <span class="st">"2024-05-03T11:14:00Z"</span><span class="op">,</span></span>
 <span id="cb8-9"><a href=""></a>    <span class="st">"location"</span><span class="op">:</span> {</span>
-<span id="cb8-10"><a href=""></a>        <span class="co">// GeoJSON location. Da impostare solo in fase di creazione se sensore è statico</span></span>
-<span id="cb8-11"><a href=""></a>    }</span>
-<span id="cb8-12"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-10"><a href=""></a>        <span class="st">"type"</span><span class="op">:</span> <span class="st">"Point"</span><span class="op">,</span></span>
+<span id="cb8-11"><a href=""></a>        <span class="st">"coordinates"</span><span class="op">:</span> [<span class="op">-</span><span class="fl">3.48043</span><span class="op">,</span> <span class="fl">40.31308</span>] <span class="co">// [lon, lat] this is located in Madrid</span></span>
+<span id="cb8-12"><a href=""></a>    }</span>
+<span id="cb8-13"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Esempio di creazione device meteo</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb9-1"><a href=""></a>{</span>
 <span id="cb9-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Device:unipg:1234A"</span><span class="op">,</span></span>
