@@ -231,6 +231,17 @@ A Data Model for camera installations in a city.
 
 ::::
 
+# General principles of data models
+
+Check here: https://fiware-datamodels.readthedocs.io/en/stable/howto/index.html
+
+- Use only the parts of the Data Model your application really needs
+- Use metadata only in case of need, and follow the assumptions provided in the Data Model
+- Stick to the existing Data Models
+- While not generally advised, you can add additional attributes required by your specific application
+- Be aware that at the time being none of the official FIWARE Core Enablers enforce schema validation.
+Thus, in case you want to be sure your application data validates correctly against a given Data Model, this is up to you.
+
 # The `id`, `type`, and `name` (mandatory) attributes
 
 - `type`: must be equal to the used smart data model
