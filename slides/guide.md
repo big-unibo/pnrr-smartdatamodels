@@ -235,7 +235,7 @@ A Data Model for camera installations in a city.
 
 Check here: https://fiware-datamodels.readthedocs.io/en/stable/howto/index.html
 
-- Use only the parts of the Data Model your application really needs
+- Use only the parts of the Data Model your application *really* needs
 - Use metadata only in case of need, and follow the assumptions provided in the Data Model
 - Stick to the existing Data Models
 - While not generally advised, you can add additional attributes required by your specific application
@@ -247,7 +247,7 @@ Thus, in case you want to be sure your application data validates correctly agai
 - `type`: must be equal to the used smart data model
 - `id`: must come with the pattern `urn:ngsi-ld:<type>:<partner>:<uuid>`
     - `<type>`: entity type (e.g., `Device`, `AgriParcel`)
-    - `<partner>`: name of the partner (e.g., `cnr`, `polimi`, `unict`, `unipg`, `unipr`)
+    - `<partner>`: name of the partner (e.g., `cnr`, `polimi`, `unibo`, `unict`, `unipg`, `unipr`)
     - `<uuid>` check [here](https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation) to get a universal identifier
 - `name`: user-friendly name of the entity
 
@@ -255,7 +255,7 @@ Example
 
 ```js
 {
-    "id": "urn:ngsi-ld:Camera:9ea60389-9246-4dda-a083-3e3bcb444131",
+    "id": "urn:ngsi-ld:Camera:unibo:9ea60389-9246-4dda-a083-3e3bcb444131",
     "type": "Camera",
     "name": "Front Camera RGB",
     ...
