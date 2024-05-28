@@ -647,7 +647,7 @@
 <h1>General principles of data models</h1>
 <p>Check here: https://fiware-datamodels.readthedocs.io/en/stable/howto/index.html</p>
 <ul>
-<li>Use only the parts of the Data Model your application really needs</li>
+<li>Use only the parts of the Data Model your application <em>really</em> needs</li>
 <li>Use metadata only in case of need, and follow the assumptions provided in the Data Model</li>
 <li>Stick to the existing Data Models</li>
 <li>While not generally advised, you can add additional attributes required by your specific application</li>
@@ -662,14 +662,14 @@
 <li><code>id</code>: must come with the pattern <code>urn:ngsi-ld:&lt;type&gt;:&lt;partner&gt;:&lt;uuid&gt;</code>
 <ul>
 <li><code>&lt;type&gt;</code>: entity type (e.g., <code>Device</code>, <code>AgriParcel</code>)</li>
-<li><code>&lt;partner&gt;</code>: name of the partner (e.g., <code>cnr</code>, <code>polimi</code>, <code>unict</code>, <code>unipg</code>, <code>unipr</code>)</li>
+<li><code>&lt;partner&gt;</code>: name of the partner (e.g., <code>cnr</code>, <code>polimi</code>, <code>unibo</code>, <code>unict</code>, <code>unipg</code>, <code>unipr</code>)</li>
 <li><code>&lt;uuid&gt;</code> check <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Textual_representation">here</a> to get a universal identifier</li>
 </ul></li>
 <li><code>name</code>: user-friendly name of the entity</li>
 </ul>
 <p>Example</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb6-1"><a href=""></a>{</span>
-<span id="cb6-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Camera:9ea60389-9246-4dda-a083-3e3bcb444131"</span><span class="op">,</span></span>
+<span id="cb6-2"><a href=""></a>    <span class="st">"id"</span><span class="op">:</span> <span class="st">"urn:ngsi-ld:Camera:unibo:9ea60389-9246-4dda-a083-3e3bcb444131"</span><span class="op">,</span></span>
 <span id="cb6-3"><a href=""></a>    <span class="st">"type"</span><span class="op">:</span> <span class="st">"Camera"</span><span class="op">,</span></span>
 <span id="cb6-4"><a href=""></a>    <span class="st">"name"</span><span class="op">:</span> <span class="st">"Front Camera RGB"</span><span class="op">,</span></span>
 <span id="cb6-5"><a href=""></a>    <span class="op">...</span></span>
