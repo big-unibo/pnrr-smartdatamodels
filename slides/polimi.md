@@ -2,7 +2,7 @@
 
 # POLIMI (2024-04-28)
 
-Esempio di `Task` (nelle slides precedente le specifiche per compilare `id`, `location`, `date*`)
+Esempio di `Task` (nelle slides precedenti le specifiche per compilare `id`, `location`, `date*`)
 
 ```js
 {
