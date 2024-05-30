@@ -1,5 +1,31 @@
 {{< include guide.md >}}
 
+# POLIMI (2024-04-28)
+
+Esempio di Task (nelle slides precedente le specifiche per compilare `id`, `location`, `date*`)
+
+```js
+{
+    "id": "urn:ngsi-ld:Task:polimi:....",
+    "type": "Task",
+    "name": "Weeding",
+    "description": "Automatically weeding a parcel on 2024-04-01",
+    "hasWorkingArea": "<id agrifarm/agriparcel>",
+    "location": {
+        "type": "LineString",
+        "coordinates": [
+            [-3.4817, 40.3133],
+            [-3.4817, 40.3134],
+            // ...
+        ]
+    },
+    "dateStart": "2012-04-13T10:52:00Z",
+    "dateEnd": "2012-04-13T10:57:00Z",
+    "status": "finished",
+    "result": "ok",
+}
+```
+
 # POLIMI (2024-04-18)
 
 Contesto: ricerca su vigneto località Cadriano.
