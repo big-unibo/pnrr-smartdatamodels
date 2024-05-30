@@ -22,7 +22,7 @@ Esempio di `Task` (nelle slides precedenti le specifiche per compilare `id`, `lo
     "dateStart": "2012-04-13T10:52:00Z",
     "dateEnd": "2012-04-13T10:57:00Z",
     "status": "finished",
-    "result": "ok",
+    "result": "ok"
 }
 ```
 
