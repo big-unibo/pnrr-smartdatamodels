@@ -18,7 +18,7 @@ Esempio di `Task` (nelle slides precedenti le specifiche per compilare `id`, `lo
             [-3.4817, 40.3134],
             // ...
         ]
-    },
+    }, // Oppure un semplice Point GeoJSON
     "dateStart": "2012-04-13T10:52:00Z",
     "dateEnd": "2012-04-13T10:57:00Z",
     "status": "finished",
