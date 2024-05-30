@@ -1,6 +1,6 @@
 {{< include guide.md >}}
 
-# POLIMI (2024-04-28)
+# POLIMI (2024-05-28)
 
 Esempio di `Task` (nelle slides precedenti le specifiche per compilare `id`, `location`, `date*`)
 
