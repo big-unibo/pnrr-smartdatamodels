@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "vigna",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 11.410380905681548, 44.549925408099448 ], [ 11.409668184804206, 44.548734375567747 ], [ 11.409284074987115, 44.54885997801744 ], [ 11.410037689685286, 44.550056487400148 ], [ 11.410380905681548, 44.549925408099448 ] ] ] ] } }
+]
+}
