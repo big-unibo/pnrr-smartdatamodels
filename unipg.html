@@ -476,6 +476,10 @@
 <ul>
 <li><p>CRUD HTTP APIs are available <a href="https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03">here</a></p></li>
 <li><p><a href="https://fiware-orion.readthedocs.io/en/2.4.0/user/forbidden_characters/">These characters</a> are not admissible in the payload</p></li>
+<li><p>Pay attention to <a href="https://fiware-orion.readthedocs.io/en/1.2.3/user/known_limitations/">these</a> limitations</p>
+<ul>
+<li>E.g., 1014 characters per attribute</li>
+</ul></li>
 <li><p>Example of HTTP request</p>
 <pre><code>  curl --location 'http://localhost:1026/v2/entities/' \​
        --header 'Content-Type: application/json' \​
