@@ -65,6 +65,8 @@ FIWARE offers APIs to upload/get/update the data.
 
 - CRUD HTTP APIs are available [here](https://documenter.getpostman.com/view/513743/RWToNwzF#8ff1dc7a-3929-4e5b-a6c1-0b4a8074cc03) 
 - [These characters](https://fiware-orion.readthedocs.io/en/2.4.0/user/forbidden_characters/) are not admissible in the payload
+- Pay attention to [these](https://fiware-orion.readthedocs.io/en/1.2.3/user/known_limitations/) limitations
+    - E.g., 1014 characters per attribute
 - Example of HTTP request
 
         curl --location 'http://localhost:1026/v2/entities/' \​
