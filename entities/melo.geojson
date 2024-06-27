@@ -1,8 +1,47 @@
 {
-"type": "FeatureCollection",
-"name": "melo",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 11.414713146662008, 44.548392139139999 ], [ 11.414862241494264, 44.548332158460354 ], [ 11.41409620252853, 44.547358757716424 ], [ 11.413940252761456, 44.547405028526434 ], [ 11.414713146662008, 44.548392139139999 ] ] ] ] } }
-]
+    "type": "FeatureCollection",
+    "name": "melo",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                11.414713146662008,
+                                44.548392139139999
+                            ],
+                            [
+                                11.414862241494264,
+                                44.548332158460354
+                            ],
+                            [
+                                11.41409620252853,
+                                44.547358757716424
+                            ],
+                            [
+                                11.413940252761456,
+                                44.547405028526434
+                            ],
+                            [
+                                11.414713146662008,
+                                44.548392139139999
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
 }

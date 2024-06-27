@@ -1,0 +1,37 @@
+{
+    "id": "urn:ngsi-ld:AgriParcel:unibo:cadriano-pero-001",
+    "type": "AgriParcel",
+    "dateCreated": "2024-06-27T14:25:00Z",
+    "dateModified": "2024-06-27T14:25:00Z",
+    "location": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        11.416054480878843,
+                        44.550236975346337
+                    ],
+                    [
+                        11.416311716049256,
+                        44.550133366736034
+                    ],
+                    [
+                        11.415628137401958,
+                        44.549248823111853
+                    ],
+                    [
+                        11.415360184099447,
+                        44.549354813529291
+                    ],
+                    [
+                        11.416054480878843,
+                        44.550236975346337
+                    ]
+                ]
+            ]
+        ]
+    },
+    "description": "Cadriano - Pero",
+    "belongsTo": "urn:ngsi-ld:AgriFarm:unibo:cadriano-001"
+}

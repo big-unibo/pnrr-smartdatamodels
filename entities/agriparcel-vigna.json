@@ -1,0 +1,37 @@
+{
+    "id": "urn:ngsi-ld:AgriParcel:unibo:cadriano-vigna-001",
+    "type": "AgriParcel",
+    "dateCreated": "2024-06-27T14:25:00Z",
+    "dateModified": "2024-06-27T14:25:00Z",
+    "location": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        11.410380905681548,
+                        44.549925408099448
+                    ],
+                    [
+                        11.409668184804206,
+                        44.548734375567747
+                    ],
+                    [
+                        11.409284074987115,
+                        44.54885997801744
+                    ],
+                    [
+                        11.410037689685286,
+                        44.550056487400148
+                    ],
+                    [
+                        11.410380905681548,
+                        44.549925408099448
+                    ]
+                ]
+            ]
+        ]
+    },
+    "description": "Cadriano - Vigna",
+    "belongsTo": "urn:ngsi-ld:AgriFarm:unibo:cadriano-001"
+}

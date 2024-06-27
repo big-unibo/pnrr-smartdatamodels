@@ -1,8 +1,47 @@
 {
-"type": "FeatureCollection",
-"name": "pero",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 11.416054480878843, 44.550236975346337 ], [ 11.416311716049256, 44.550133366736034 ], [ 11.415628137401958, 44.549248823111853 ], [ 11.415360184099447, 44.549354813529291 ], [ 11.416054480878843, 44.550236975346337 ] ] ] ] } }
-]
+    "type": "FeatureCollection",
+    "name": "pero",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                11.416054480878843,
+                                44.550236975346337
+                            ],
+                            [
+                                11.416311716049256,
+                                44.550133366736034
+                            ],
+                            [
+                                11.415628137401958,
+                                44.549248823111853
+                            ],
+                            [
+                                11.415360184099447,
+                                44.549354813529291
+                            ],
+                            [
+                                11.416054480878843,
+                                44.550236975346337
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
 }

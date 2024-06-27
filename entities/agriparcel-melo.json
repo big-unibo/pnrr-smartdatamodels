@@ -1,0 +1,37 @@
+{
+    "id": "urn:ngsi-ld:AgriParcel:unibo:cadriano-melo-001",
+    "type": "AgriParcel",
+    "dateCreated": "2024-06-27T14:25:00Z",
+    "dateModified": "2024-06-27T14:25:00Z",
+    "location": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        11.414713146662008,
+                        44.548392139139999
+                    ],
+                    [
+                        11.414862241494264,
+                        44.548332158460354
+                    ],
+                    [
+                        11.41409620252853,
+                        44.547358757716424
+                    ],
+                    [
+                        11.413940252761456,
+                        44.547405028526434
+                    ],
+                    [
+                        11.414713146662008,
+                        44.548392139139999
+                    ]
+                ]
+            ]
+        ]
+    },
+    "description": "Cadriano - Melo",
+    "belongsTo": "urn:ngsi-ld:AgriFarm:unibo:cadriano-001"
+}

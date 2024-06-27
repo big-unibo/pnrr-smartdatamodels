@@ -1,0 +1,37 @@
+{
+    "id": "urn:ngsi-ld:AgriParcel:unibo:cadriano-albicocco-001",
+    "type": "AgriParcel",
+    "dateCreated": "2024-06-27T14:25:00Z",
+    "dateModified": "2024-06-27T14:25:00Z",
+    "location": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [
+                        11.415420668548714,
+                        44.549297713671614
+                    ],
+                    [
+                        11.415598012528466,
+                        44.549235121678755
+                    ],
+                    [
+                        11.414940796603505,
+                        44.548395345774637
+                    ],
+                    [
+                        11.414776492622263,
+                        44.548463153766896
+                    ],
+                    [
+                        11.415420668548714,
+                        44.549297713671614
+                    ]
+                ]
+            ]
+        ]
+    },
+    "description": "Cadriano - Albicocco",
+    "belongsTo": "urn:ngsi-ld:AgriFarm:unibo:cadriano-001"
+}

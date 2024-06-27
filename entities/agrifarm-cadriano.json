@@ -1,0 +1,14 @@
+{
+    "id": "urn:ngsi-ld:AgriFarm:unibo:cadriano-001",
+    "name": "Cadriano UniBO",
+    "type": "AgriFarm",
+    "dateCreated": "2024-06-27T14:25:00Z",
+    "dateModified": "2024-06-27T14:25:00Z",
+    "location": {
+        "type": "Polygon",
+        "coordinates": [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]
+    },
+    "hasAgriParcel": [
+        "urn:ngsi-ld:AgriParcel:unibo:cadriano-vigna-001"
+    ]
+}
