@@ -6,9 +6,35 @@
     "dateModified": "2024-06-27T14:25:00Z",
     "location": {
         "type": "Polygon",
-        "coordinates": [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]
+        "coordinates": [
+            [
+                [
+                    11.409284074987115,
+                    44.547358757716424
+                ],
+                [
+                    11.409284074987115,
+                    44.55023697534634
+                ],
+                [
+                    11.416311716049256,
+                    44.55023697534634
+                ],
+                [
+                    11.416311716049256,
+                    44.547358757716424
+                ],
+                [
+                    11.409284074987115,
+                    44.547358757716424
+                ]
+            ]
+        ]
     },
     "hasAgriParcel": [
-        "urn:ngsi-ld:AgriParcel:unibo:cadriano-vigna-001"
+        "urn:ngsi-ld:AgriParcel:unibo:cadriano-vigna-001",
+        "urn:ngsi-ld:AgriParcel:unibo:cadriano-albicocco-001",
+        "urn:ngsi-ld:AgriParcel:unibo:cadriano-melo-001",
+        "urn:ngsi-ld:AgriParcel:unibo:cadriano-pero-001"
     ]
 }
