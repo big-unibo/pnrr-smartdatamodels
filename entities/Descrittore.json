@@ -1,0 +1,18 @@
+{
+  "addressCountry": "Italy",
+  "addressRegion": "Sicily",
+  "district": "Syracuse",
+  "id": "urn:ngsi-ld:Camera:unict:1",
+  "type": "Camera",
+  "cameraName": "Cam2",
+  "imageSnapshot": "http://137.204.70.156:41080/unict/data/rf_prob_map.jpg",
+  "endDateTime": "2024-06-18T17:13:00Z",
+  "startDateTime": "2024-06-18T17:13:00Z",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      14.7722825510000000,
+      37.4128197049999969
+    ]
+  }
+}

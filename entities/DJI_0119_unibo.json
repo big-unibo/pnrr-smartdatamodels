@@ -1,0 +1,15 @@
+{
+    "id": "urn:ngsi-ld:Camera:cnr:878ffeb1-40fe-4593-b4fb-f9da631f4b4d",
+    "type": "Camera",
+    "cameraName": "DroneCam",
+    "dateCreated": "2022-09-07T06:30:00.020Z",
+    "description": "15mt altitude photo with orientation EO",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            11.908323888888889,
+            44.87871669444444
+        ]
+    },
+    "imageSnapshot": "http://137.204.70.156:41080/cnr/data/15mt_EO/DJI_0119.JPG"
+}

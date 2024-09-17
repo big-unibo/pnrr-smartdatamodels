@@ -1,6 +1,6 @@
 {{< include guide.md >}}
 
-# UniPR (2024-05-17)
+# Incontro (2024-05-17)
 
 Contesto: raccolta dati sensoriali in open field.
 
@@ -21,10 +21,45 @@ Collezione dati:
 - Attuatori (e.g, valvole, sono mappabili su device FIWARE)
 - Connettore verso FIWARE
 
-# Integration steps (UniBO + UniPR)
+# Incontro (2024-09-17)
 
-- Step 1: (UniPR) avere un'esempio di entity per tipo
-- Step 2: (UniBO) predisporre API per dati meteo, dato storico, dati satellitari
+Esempio di creazione device
+
+```js
+{
+    "id": "urn:ngsi-ld:Device:unipg:9845A",
+    "type": "Device",
+    "name": "...",
+    "controlledProperty": ["SAP"],
+    "dateInstalled": "2024-05-03T11:14:00Z",
+    "location": {
+        "type": "Point",
+        "coordinates": [-3.48043, 40.31308] // [lon, lat] this is located in Madrid
+    }, // ...
+}
+```
+
+Esempio di creazione device meteo
+
+```js
+{
+    "id": "urn:ngsi-ld:Device:unipg:1234A",
+    "type": "Device",
+    "controlledProperty": ["humidity", "windSpeed", "temperature"],
+    // "value": [0.22, "nan", 21.2], ...
+}
+```
+
+Esempio di update a seguito di nuovo measurement
+
+```js
+{
+    "id": "urn:ngsi-ld:Device:unipg:9845A",
+    "type": "Device",
+    "value": [0.22],
+    "dateObserved": "2024-05-04T10:00:00Z"
+}
+```
 
 # Data models (UniBO)
 

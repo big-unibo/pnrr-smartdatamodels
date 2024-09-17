@@ -1,0 +1,28 @@
+{
+  "addressCountry": Italy
+  "addressRegion": Sicily
+  "district": Syracuse
+  "id": "urn:ngsi-ld:RandomForest:UNICT:1",
+  "type": "Camera",
+  "cameraName": "Cam2",
+  "streamName": "ProbiliryCitrusSyracuseRev1",
+  "streamURL": "https://drive.google.com/file/d/1eNmgWDvb2R34o03cZ9dPXrtEvsreQzQ4/view?usp=sharing",
+  "imageSnapshot": "https://drive.google.com/file/d/1JKolPBLXctlCkXpiHmZEx2mmWcVK3H4A/view?usp=drive_link",
+  "cameraUsage": "SURVEILLANCE",
+  "cameraType": "FIXED",
+  "endDateTime": "2024-06-18T17:13",
+  "startDateTime": "26/11/2023T19:27",
+  "cameraOrientation": {
+    "comments": "Camera facing RSBhawan",
+    "annotatedMap": "https://drive.google.com/file/d/1RXDGogU5UMmzRppqFaNKTzcr69Kl0wjb/view?usp=sharing"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      14.7722825510000000,
+      37.4128197049999969
+    ]
+  },
+  "cameraNum": 2,
+  "on": true
+}

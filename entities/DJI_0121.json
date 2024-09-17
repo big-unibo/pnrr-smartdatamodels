@@ -1,0 +1,15 @@
+{
+    "id": "urn:ngsi-ld:Camera:cnr:cc0d0a26-4689-4ddf-a1e2-05986852e10d",
+    "type": "Camera",
+    "cameraName": "DroneCam",
+    "dateCreated": "2022-09-07T06:30:00.020Z",
+    "description": "15mt altitude photo with orientation EO",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            44.87871669444444,
+            11.908232333333334
+        ]
+    },
+    "imageSnapshot": ""
+}
